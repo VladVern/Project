@@ -1,0 +1,516 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rufina', serif;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+.Header {
+    height: 690px;
+    background-image: url(./img/HeaderImg.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.First {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Logo {
+    width: 307px;
+    height: 115px;
+    margin-right: 50px;
+}
+
+/*open menu*/
+
+.menu-open {
+    position: relative;
+    width: 50px;
+    height: 30px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-open span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 1px;
+    transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+}
+
+.menu-open span:nth-child(1) {
+    top: 0;
+    transform: rotate(0);
+}
+
+.menu-open span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.menu-open span:nth-child(3) {
+    bottom: 0;
+    transform: rotate(0);
+}
+
+.menu-open.open span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.menu-open.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-open.open span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+/*  */
+
+.SideMenu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 100%;
+    background-color: #4d4d4d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 500;
+}
+
+.SideMenu.open {
+    right: 0;
+}
+
+.SideMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.SideMenu li {
+    margin: 20px 0;
+}
+
+.SideMenu li:nth-child(2) a {
+    color: #9caa00;
+}
+
+.SideMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.SideMenu a:hover {
+    color: #9caa00;
+}
+
+/*open menu*/
+
+.Number {
+    color: white;
+    font-size: 18px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    margin-right: 25px;
+
+}
+.Reservations {
+    color: white;
+    font-weight: 950px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'Rufina', serif;
+}
+
+.Headline_Hero {
+    margin-left: 450px;
+    margin-top: 110px;
+}
+
+.Headline_Hero h1{
+    color: white;
+    font-size: 90px;
+    font-weight: 520;
+    margin-bottom: 20px;
+}
+
+.Headline_Hero p{
+    color: white;
+    font-size: 22px;
+}
+
+.OpenTime {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: 300px;
+    text-align: right;
+}
+
+.Open-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.Open-time p {
+    color: white;
+    margin: 0;
+}
+
+.Open-time p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Open-time p:last-child {
+    font-size: 18px;
+}
+
+.OpenTime p {
+    color: white;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.Time-eat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 420px;
+    margin-left: auto;
+    border-top: 1px dotted white;
+    padding-top: 10px;
+}
+
+.Time-eat div {
+    text-align: center;
+    color: white;
+}
+
+.Time-eat p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Time-eat p:last-child {
+    font-size: 16px;
+}
+
+.Brunch {
+    color: white;
+}
+
+.Lunch {
+    color: white;
+}
+
+.Dinner {
+    color: white;
+}
+
+/* Header */
+
+/* Adress+Location */
+
+.Adress_Location {
+    position: relative;
+    margin-top: 150px;
+}
+
+.Orange {
+    position: absolute;
+    top: -120px; 
+    left: 52%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 400px;
+    height: auto;
+}
+
+.Contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Text_Contact {
+    margin-top: 160px;
+    margin-left: 200px;
+}
+
+.Text_Contact p {
+   color: #233000;
+   font-size: 25px;
+   font-weight: 550;
+}
+
+.Text_Contact span {
+    color: #9caa00;
+}
+
+.Contact img {
+    width: 530px;
+    height: 430px;
+}
+
+.Place {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.Text_Place {
+    margin-top: 160px;
+    margin-right: 120px; 
+}
+
+.Text_Place p {
+    color: #233000;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.Btn_maps {
+    color: black;
+    font-weight: 950px;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'Rufina', serif;
+    margin-top: 15px;
+}
+
+.Place img {
+    width: 550px;
+    height: 680px;
+}
+
+/* Reservation Form */
+
+.Reservation_Form {
+    background-color: #ebf0e4;
+    margin-top: 160px;
+    padding: 40px;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.Mint {
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 0;
+    width: 400px;
+    height: auto;
+    left: 550px;
+}
+
+.Text_Form {
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.Text_Form h1 {
+    font-size: 70px;
+}
+
+.Text_Form p {
+    font-size: 20px;
+    color: gray;
+    position: absolute;
+    margin-top: 120px;
+    margin-right: 350px;
+}
+
+.Form {
+    display: grid;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.Form select, .Form input {
+    width: 100%;
+    padding: 12px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: 'Rufina', serif;
+    box-sizing: border-box;
+}
+
+.Time, .Name {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.Time select, .Time input, .Name input {
+    width: 200px;
+}
+
+.Guests select, .Tel input, .Email input{
+    width: 100%;
+}
+
+.Submit_Btn {
+    width: 100%;
+    color: white;
+    background-color: #5e6600;
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Rufina', serif;
+    cursor: pointer;
+}
+
+.error-message p {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Footer */
+
+footer{
+    background-color: #233000;
+    padding-top: 50px;
+}
+
+footer h1, h2, p {
+    color: white;
+}
+
+footer h1 {
+    font-size: 40px;
+}
+
+footer input {
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Rufina', serif;
+}
+
+footer button {
+    color: white;
+    background-color: #5e6600;
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Rufina', serif;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.Text_Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.Footer_Number {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.Subscribe p {
+    font-size: 13px;
+}
+
+.Dots {
+    width: 2000px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.Contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Contacts img {
+    width: 150px;
+    height: auto;
+}
+
+@media (max-width: 1288px) {
+    .Subscribe {
+        display: none;
+    }
+    .Text_Place {
+        margin-left: 100px;
+    }
+    .Headline_Hero {
+        display: none;
+    }
+    .OpenTime {
+        margin-top: 230px;
+    }
+}

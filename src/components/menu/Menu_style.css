@@ -16,6 +16,8 @@ body {
     background-image: url(./img/HeaderImg.png); 
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 .Navigation {
@@ -132,7 +134,7 @@ body {
     margin: 20px 0;
 }
 
-.SideMenu li:nth-child(3) a {
+.SideMenu li:nth-child(2) a {
     color: #9caa00;
 }
 
@@ -184,156 +186,176 @@ body {
     font-size: 22px;
 }
 
-.OpenTime {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: 300px;
-    text-align: right;
-}
-
-.Open-time {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 400px;
-    margin-left: auto;
-    margin-bottom: 10px;
-}
-
-.Open-time p {
-    color: white;
-    margin: 0;
-}
-
-.Open-time p:first-child {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.Open-time p:last-child {
-    font-size: 18px;
-}
-
-.OpenTime p {
-    color: white;
-    margin: 5px 0;
-    font-size: 16px;
-}
-
-.Time-eat {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 420px;
-    margin-left: auto;
-    border-top: 1px dotted white;
-    padding-top: 10px;
-}
-
-.Time-eat div {
-    text-align: center;
-    color: white;
-}
-
-.Time-eat p:first-child {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.Time-eat p:last-child {
-    font-size: 16px;
-}
-
-.Brunch {
-    color: white;
-}
-
-.Lunch {
-    color: white;
-}
-
-.Dinner {
-    color: white;
-}
-
 /* Header */
 
-/* Adress+Location */
+/* Starters */
 
-.Adress_Location {
-    position: relative;
-    margin-top: 150px;
-}
-
-.Orange {
+.Blueberry {
     position: absolute;
-    top: -120px; 
-    left: 52%;
-    transform: translateX(-50%);
+    left: 70%; 
+    bottom: 7%;
+    transform: translateX(-50%); 
     z-index: -1;
     width: 400px;
     height: auto;
 }
 
-.Contact {
+
+.Text_Starters {
+    display: grid;
+    align-items: center;
+    justify-items: center; 
+    padding-bottom: 60px;
+}
+
+.Text_Starters h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.Text_Starters p {
+    margin-top: 0; 
+    color: #b0b0b0;
+    font-weight: bold;
+}
+
+.Price_Starters_Items {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 15px;
 }
 
-.Text_Contact {
-    margin-top: 160px;
-    margin-left: 200px;
+.Price_Starters_Items img {
+    width: 500px;
+    height: auto;
 }
 
-.Text_Contact p {
-   color: #233000;
-   font-size: 25px;
-   font-weight: 550;
+/* Mains */
+
+.Mains {
+    margin-top: 70px;
 }
 
-.Text_Contact span {
-    color: #9caa00;
+.Text_Mains {
+    display: grid;
+    align-items: center;
+    justify-items: center; 
+    padding-bottom: 60px;
 }
 
-.Contact img {
-    width: 530px;
-    height: 430px;
+.Text_Mains h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
 }
 
-.Place {
+.Text_Mains p {
+    margin-top: 0; 
+    color: #b0b0b0;
+    font-weight: bold;
+}
+
+.Price_Mains_Items {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 120px;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 15px;
 }
 
-.Text_Place {
-    margin-top: 160px;
-    margin-right: 120px; 
+.Price_Mains_Items img {
+    width: 500px;
+    height: auto;
 }
 
-.Text_Place p {
-    color: #233000;
+/* Pastries_Drinks */
+
+.Pastries_Drinks {
+    margin-top: 70px;
+}
+
+.Avocado {
+    position: absolute;
+    right: 30%;
+    top: 225%;
+    transform: translateX(-50%); 
+    z-index: -1;
+    width: 400px;
+    height: auto;
+}
+
+.Text_Pastries_Drinks {
+    display: grid;
+    align-items: center;
+    justify-items: center; 
+    padding-bottom: 60px;
+}
+
+.Text_Pastries_Drinks h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.Text_Pastries_Drinks p {
+    margin-top: 0; 
+    color: #b0b0b0;
+    font-weight: bold;
+}
+
+.Price_Pastries_Drinks_Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 15px;
+}
+
+.Price_Pastries_Drinks_Items img {
+    width: 500px;
+    height: auto;
+}
+
+/* Menu item fo all */
+
+.Menu_Item {
+    margin-bottom: 60px;
+}
+
+.Menu_Item span {
     font-size: 25px;
-    font-weight: 550;
 }
 
-.Btn_maps {
-    color: black;
-    font-weight: 950px;
-    background-color: transparent;
-    border: 1px solid black;
-    padding: 15px 25px;
-    cursor: pointer;
-    font-size: 22px;
-    font-family: 'Rufina', serif;
-    margin-top: 15px;
+.menu_Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.Place img {
-    width: 550px;
-    height: 680px;
+.Menu_Header h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.Menu_Header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Menu_Item p {
+  margin: 5px 0 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.Menu_Item hr {
+  border: none;
+  border-top: 1px dashed black;
+  margin: 10px 0;
 }
 
 /* Reservation Form */
@@ -347,16 +369,8 @@ body {
     justify-items: center;
     text-align: center;
     border-radius: 10px;
-    padding-bottom: 200px;
-}
-
-.Mint {
-    position: absolute;
-    transform: translateX(-50%);
-    z-index: 0;
-    width: 400px;
-    height: auto;
-    left: 550px;
+    padding-bottom: 150px;
+    padding-top: 40px;
 }
 
 .Text_Form {
@@ -374,12 +388,14 @@ body {
     font-size: 20px;
     color: gray;
     position: absolute;
-    margin-top: 120px;
-    margin-right: 350px;
+    margin-top: 130px;
+
 }
 
 .Form {
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     max-width: 500px;
     margin: 0 auto;
@@ -397,36 +413,32 @@ body {
     box-sizing: border-box;
 }
 
-.Time, .Name {
+.Time {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-.Time select, .Time input, .Name input {
+.Time select, .Time input {
     width: 200px;
 }
 
-.Guests select, .Tel input, .Email input{
-    width: 100%;
+.Guests select {
+    width: 180px;
+    height: 48px;
 }
 
 .Submit_Btn {
-    width: 100%;
+    margin-top: 50px;
+    width: 250px;
     color: white;
-    background-color: #5e6600;
+    background-color: #233000;
     border: 1px solid black;
     padding: 15px;
     font-size: 20px;
     font-family: 'Rufina', serif;
     cursor: pointer;
-}
-
-.error-message p {
-    color: red;
-    font-size: 14px;
-    margin-top: 10px;
-    text-align: left;
+    text-align: a;
 }
 
 /* Footer */
@@ -509,17 +521,64 @@ footer button {
     height: auto;
 }
 
+@media (max-height: 1024px) {
+    .Avocado {
+        position: absolute;
+        right: 30%;
+        top: 235%;
+        transform: translateX(-50%); 
+        z-index: -1;
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media (max-height: 881px) {
+    .Blueberry {
+        position: absolute;
+        left: 70%; 
+        bottom: -10%;
+        transform: translateX(-50%); 
+        z-index: -1;
+        width: 400px;
+        height: auto;
+    }
+
+    .Avocado {
+        position: absolute;
+        right: 30%;
+        top: 275%;
+        transform: translateX(-50%); 
+        z-index: -1;
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media (max-height: 700px) {
+    .Blueberry {
+        position: absolute;
+        left: 70%; 
+        bottom: -42%;
+        transform: translateX(-50%); 
+        z-index: -1;
+        width: 400px;
+        height: auto;
+    }
+
+    .Avocado {
+        position: absolute;
+        right: 30%;
+        top: 345%;
+        transform: translateX(-50%); 
+        z-index: -1;
+        width: 400px;
+        height: auto;
+    }
+}
+
 @media (max-width: 1288px) {
     .Subscribe {
         display: none;
-    }
-    .Text_Place {
-        margin-left: 100px;
-    }
-    .Headline_Hero {
-        display: none;
-    }
-    .OpenTime {
-        margin-top: 230px;
     }
 }

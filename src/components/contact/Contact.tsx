@@ -70,6 +70,7 @@ function Contact() {
                     </div>
                     <nav className={`SideMenu ${menuOpen ? "open" : ""}`}>
                         <ul>
+                            <li><a href="#menu">Home</a></li>
                             <li><a href="#menu">Menu</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <li><a href="#about">About</a></li>
@@ -169,7 +170,7 @@ function Contact() {
                     <button type="submit" className="Submit_Btn">Book Now</button>
                 </form>
             </div>
-            <footer>
+            <footer className="footer">
                 <div className="Text_Footer">
                     <div className="Logo_Footer">
                         <h1>Food</h1>
@@ -199,7 +200,7 @@ function Contact() {
                         <p>Join our subscribers and gets best recipe recipe delivered each week!</p>
                     </div>
                 </div>
-                <img src="src/components/contact/img/Dots.png" alt="Dots" className="Dots"/>
+                <hr />
                 <div className="Contacts">
                     <p>© 2020 Zero Inc. All rights Reserved</p>
                     <img src="src/components/contact/img/Social_Media.png" alt="Social Media" />

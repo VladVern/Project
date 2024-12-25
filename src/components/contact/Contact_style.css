@@ -11,7 +11,7 @@ body {
 
 /* Header */
 
-.Header {
+.Header_Contact {
     height: 690px;
     background-image: url(./img/HeaderImg.png); 
     background-repeat: no-repeat;
@@ -378,7 +378,7 @@ body {
     margin-right: 350px;
 }
 
-.Form {
+.Form_Contact {
     display: grid;
     gap: 20px;
     max-width: 500px;
@@ -386,7 +386,7 @@ body {
     z-index: 1;
 }
 
-.Form select, .Form input {
+.Form_Contact select, .Form_Contact input {
     width: 100%;
     padding: 12px;
     color: black;

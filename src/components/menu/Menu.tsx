@@ -1,5 +1,6 @@
 import "./Menu_style.css"
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
 function Menu() {
     // Menu
@@ -11,7 +12,7 @@ function Menu() {
 
     return (
         <div className="wrapper">
-            <header className="Header">
+            <header className="Header_Menu">
                 <div className="Navigation">
                     <div className="First">
                         <a href="#menu"><img src="src/components/menu/img/Logo.png" alt="Logo" className="Logo"/></a>
@@ -29,9 +30,11 @@ function Menu() {
                     </div>
                     <nav className={`SideMenu ${menuOpen ? "open" : ""}`}>
                         <ul>
-                            <li><a href="#menu">Home</a></li>
+                            <li><a href="#home">Home</a></li>
                             <li><a href="#menu">Menu</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <Link to="/contact">
+                                <li><a href="#contact">Contact</a></li>
+                            </Link>
                             <li><a href="#about">About</a></li>
                             <li><a href="#portfolio">Portfolio - Grids</a></li>
                             <li><a href="#blogs">Blogs</a></li>
@@ -39,7 +42,7 @@ function Menu() {
                         </ul>
                     </nav>
                 </div>
-                <div className="Headline_Hero">
+                <div className="Headline_Hero_Text">
                     <h1>View Our <br /> New Menu</h1>
                     <p>The freshest ingredients for you every day</p>
                 </div>
@@ -152,11 +155,11 @@ function Menu() {
                 </div>
             </div>
             <div className="Reservation_Form">
-                <div className="Text_Form">
+                <div className="Text_Form_Menu">
                     <h1>Make a Reservation</h1>
                     <p>Get in touch with restaurant</p>
                 </div>
-                <form className="Form">
+                <form className="Form_Menu">
                     <div className="Time">
                         <input type="date" name="date" placeholder="Date"/>
                         <select name="time">
@@ -166,7 +169,7 @@ function Menu() {
                             <option>8:00 pm</option>
                         </select>
                     </div>
-                    <div className="Guests">
+                    <div className="Guests_Menu">
                         <select>
                             <option value="">Select Guests</option>
                             <option>2 Person</option>
@@ -177,7 +180,7 @@ function Menu() {
                         </select>
                     </div>
                 </form>
-                <button className="Submit_Btn">Book Now</button>
+                <button className="Submit_Btn_Menu">Book Now</button>
             </div>
             <footer className="footer">
                 <div className="Text_Footer">

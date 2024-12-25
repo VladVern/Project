@@ -1,5 +1,6 @@
 import "./Contact_style.css"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 function Contact() {
     // Menu
@@ -52,10 +53,10 @@ function Contact() {
 
     return (
          <div className="wrapper">
-            <header className="Header">
+            <header className="Header_Contact">
                 <div className="Navigation">
                     <div className="First">
-                        <a href="#menu"><img src="src/components/contact/img/Logo.png" alt="Logo" className="Logo"/></a>
+                        <Link to="/home"><img src="src/components/contact/img/Logo.png" alt="Logo" className="Logo"/></Link>
                         <div className="Navigation_btn">
                             <button className={`menu-open ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
                                 <span></span>
@@ -70,8 +71,10 @@ function Contact() {
                     </div>
                     <nav className={`SideMenu ${menuOpen ? "open" : ""}`}>
                         <ul>
-                            <li><a href="#menu">Home</a></li>
-                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <Link to="/menu">
+                                <li><a href="#menu">Menu</a></li>
+                             </Link>
                             <li><a href="#contact">Contact</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#portfolio">Portfolio - Grids</a></li>
@@ -130,7 +133,7 @@ function Contact() {
                     <h1>Make a Reservation</h1>
                     <p>Get in touch with restaurant</p>
                 </div>
-                <form className="Form" onSubmit={handleFormSubmit}>
+                <form className="Form_Contact" onSubmit={handleFormSubmit}>
                     <div className="Name">
                         <input type="text" name="firstName" placeholder="First Name" value={formData.firstName} onChange={handleInputChange}/>
                         <input type="text" name="lastName" placeholder="Last Name" value={formData.lastName} onChange={handleInputChange}/>

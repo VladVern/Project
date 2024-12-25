@@ -11,7 +11,7 @@ body {
 
 /* Header */
 
-.Header {
+.Header_Menu {
     height: 690px;
     background-image: url(./img/HeaderImg.png); 
     background-repeat: no-repeat;
@@ -169,19 +169,19 @@ body {
     font-family: 'Rufina', serif;
 }
 
-.Headline_Hero {
+.Headline_Hero_Text {
     margin-left: 450px;
     margin-top: 110px;
 }
 
-.Headline_Hero h1{
+.Headline_Hero_Text h1{
     color: white;
     font-size: 90px;
     font-weight: 520;
     margin-bottom: 20px;
 }
 
-.Headline_Hero p{
+.Headline_Hero_Text p{
     color: white;
     font-size: 22px;
 }
@@ -373,18 +373,18 @@ body {
     padding-top: 40px;
 }
 
-.Text_Form {
+.Text_Form_Menu {
     display: grid;
     gap: 10px;
     justify-items: center;
     margin-bottom: 20px;
 }
 
-.Text_Form h1 {
+.Text_Form_Menu h1 {
     font-size: 70px;
 }
 
-.Text_Form p {
+.Text_Form_Menu p {
     font-size: 20px;
     color: gray;
     position: absolute;
@@ -392,7 +392,7 @@ body {
 
 }
 
-.Form {
+.Form_Menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -402,7 +402,7 @@ body {
     z-index: 1;
 }
 
-.Form select, .Form input {
+.Form_Menu select, .Form_Menu input {
     width: 100%;
     padding: 12px;
     color: black;
@@ -423,12 +423,12 @@ body {
     width: 200px;
 }
 
-.Guests select {
+.Guests_Menu select {
     width: 180px;
     height: 48px;
 }
 
-.Submit_Btn {
+.Submit_Btn_Menu {
     margin-top: 50px;
     width: 250px;
     color: white;

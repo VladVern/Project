@@ -102,7 +102,7 @@ body {
 
 /*  */
 
-.SideMenu {
+.SideMenu_Contact {
     position: fixed;
     top: 0;
     right: -300px;
@@ -118,32 +118,32 @@ body {
     z-index: 500;
 }
 
-.SideMenu.open {
+.SideMenu_Contact.open {
     right: 0;
 }
 
-.SideMenu ul {
+.SideMenu_Contact ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.SideMenu li {
+.SideMenu_Contact li {
     margin: 20px 0;
 }
 
-.SideMenu li:nth-child(3) a {
+.SideMenu_Contact a:nth-child(3) li a {
     color: #9caa00;
 }
 
-.SideMenu a {
+.SideMenu_Contact a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
-.SideMenu a:hover {
+.SideMenu_Contact a:hover {
     color: #9caa00;
 }
 
@@ -156,6 +156,7 @@ body {
     margin-right: 25px;
 
 }
+
 .Reservations {
     color: white;
     font-weight: 950px;

@@ -69,17 +69,29 @@ function Contact() {
                         <p className="Number">+86 852 346 000</p>
                         <button className="Reservations">Reservations</button>
                     </div>
-                    <nav className={`SideMenu ${menuOpen ? "open" : ""}`}>
+                    <nav className={`SideMenu_Contact ${menuOpen ? "open" : ""}`}>
                         <ul>
-                            <li><a href="#home">Home</a></li>
+                            <Link to="/home">
+                                <li><a href="#home">Home</a></li>
+                            </Link>
                             <Link to="/menu">
                                 <li><a href="#menu">Menu</a></li>
-                             </Link>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#portfolio">Portfolio - Grids</a></li>
-                            <li><a href="#blogs">Blogs</a></li>
-                            <li><a href="#post">Post</a></li>
+                            </Link>
+                            <Link to="/contact">
+                                <li><a href="#contact">Contact</a></li>
+                            </Link>
+                            <Link to="/about">
+                                <li><a href="#about">About</a></li>
+                            </Link>
+                            <Link to="/portfolio">
+                                <li><a href="#portfolio">Portfolio - Grids</a></li>
+                            </Link>
+                            <Link to="/blogs">
+                                <li><a href="#blogs">Blogs</a></li>    
+                            </Link>
+                            <Link to="/post">
+                                <li><a href="#post">Post</a></li>
+                            </Link>
                         </ul>
                     </nav>
                 </div>

@@ -1,0 +1,878 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rufina', serif;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+.Header_Home {
+    height: 2100px;
+    background-color: #233000;
+    margin: 0;
+    padding: 0;
+}
+
+.Navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.First {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Logo {
+    width: 307px;
+    height: 115px;
+    margin-right: 50px;
+}
+
+/*open menu*/
+
+.menu-open {
+    position: relative;
+    width: 50px;
+    height: 30px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-open span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 1px;
+    transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+}
+
+.menu-open span:nth-child(1) {
+    top: 0;
+    transform: rotate(0);
+}
+
+.menu-open span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.menu-open span:nth-child(3) {
+    bottom: 0;
+    transform: rotate(0);
+}
+
+.menu-open.open span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.menu-open.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-open.open span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+/*  */
+
+.SideMenu_Home {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 100%;
+    background-color: #4d4d4d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 500;
+}
+
+.SideMenu_Home.open {
+    right: 0;
+}
+
+.SideMenu_Home ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.SideMenu_Home li {
+    margin: 20px 0;
+}
+
+.SideMenu_Home a:nth-child(1) li a{ 
+    color: #9caa00;
+}
+
+.SideMenu_Home a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.SideMenu_Home a:hover {
+    color: #9caa00;
+}
+
+/*open menu*/
+
+.Number {
+    color: white;
+    font-size: 18px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    margin-right: 25px;
+
+}
+
+.Reservations {
+    color: white;
+    font-weight: 950px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'Rufina', serif;
+}
+
+.Headline_Hero_Text_Home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+    width: 70%;
+    padding-bottom: 150px;
+}
+
+.Headline_Hero_Text_Home h1 {
+    color: white;
+    font-size: 90px;
+    font-weight: 520;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.Headline_Hero_Text_Home p {
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.Scroll_Home {
+    transform: rotate(90deg);
+    transform-origin: left top;
+    margin-left: 20px;
+    font-size: 30px;
+    color: white;
+}
+  
+.Headline_Hero_Text_Home hr {
+    border: none;
+    border-top: 2px dashed white;
+    margin-right: 350px;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    
+}
+
+.Food_First {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Food_First img:first-child {
+    width: 400px;
+    z-index: 0;
+}
+
+.Food_First img:last-child {
+    width: 400px;
+    z-index: 0;
+    margin-top: 450px;
+    margin-right: 160px;
+}
+
+.Seasoning_First {
+    position: absolute;
+    top: -50px;
+    right: -50px; 
+    width: 150px;
+}
+
+.Text_Home_Food_Second {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Text_Home_Food_Second h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.Text_Home_Food_Second p {
+    color: white;
+    font-size: 25px;
+}
+
+.Food_Second img {
+    width: 700px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.Seasoning_Second img {
+    width: 400px;
+    height: auto;
+}
+/* Header */
+
+/* Our Menu */
+
+.Our_Menu {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    padding-bottom: 500px;
+}
+
+.Leaves {
+    position: absolute;
+    left: 90%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+    padding-bottom: 100px;
+}
+
+.Text_Menu_Home_Items {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 200px;
+    padding-bottom: 60px;
+}
+
+.Text_Menu_Home {
+    text-align: center; 
+    margin-top: 25px;
+}
+
+.Text_Menu_Home h1{
+    font-size: 75px;
+}
+
+.Text_Menu_Home p{
+    font-size: 25px;
+    text-align: left;
+    position: absolute;
+    margin-top: -30px;
+    color: #4d4d4d;
+}
+
+.Price_Home_Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 15px;
+    margin-top: 100px;
+    
+}
+
+.Home_Item {
+    margin-bottom: 60px;
+}
+
+.Menu_Item span {
+    font-size: 25px;
+}
+
+.Home_Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.Home_Header h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.Home_Header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Home_Item p {
+  margin: 5px 0 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.Home_Item hr {
+  border: none;
+  border-top: 1px dashed black;
+  margin: 10px 0;
+}
+
+.Price {
+    font-size: 25px;
+}
+
+/* Excellent cook*/
+
+.Excellent_Cook {
+    background-color: #ebf0e4;
+    margin-top: 100px;
+}
+
+.Excellent_Cook_Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Image_Excellent_Cook {
+    position: relative; 
+}
+
+.Leaf_First {
+    position: absolute;
+    z-index: 0;
+    top: -300px;
+    right: -100px;
+    width: 260px;
+    height: auto;
+}
+
+.Chef {
+    position: absolute;
+    top: -225px;
+    left: 100px;
+    transform: translateX(-50%);
+    width: 600px;
+    height: auto;
+    z-index: 1;
+}
+
+.Text_Image_Excellent_Cook h1 {
+    font-size: 85px;
+}
+
+.Text_Image_Excellent_Cook p {
+    position: absolute;
+    margin-top: -29px;
+    font-size: 20px;
+    color: gray;
+}
+
+.Text_Image_Excellent_Cook img {
+    width: 300px;
+    height: auto;
+    padding-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+/* Features */
+
+.Features_Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+.Features_Items h2 {
+    font-size: 35px;
+}
+
+.Features_Items p {
+    font-size: 20px;
+    color: gray;
+}
+
+.Features_Items img {
+    width: 200px;
+    height: auto;
+}
+
+.Premium_Quality {
+    text-align: center;
+}
+
+.Seasonal_Vegetables {
+    text-align: center;
+}
+
+.Fresh_Fruit {
+    text-align: center;
+}
+
+/* Recent_Post */
+
+.Recent_Post {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 250px;
+    position: relative;
+    z-index: 0;
+}
+
+.Foto_Blog {
+    position: relative;
+    width: 600px;
+    height: auto;
+}
+
+.Foto_Blog img {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.Foto_Blog button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    width: 150px;
+    color: white;
+    background-color: #5e6600;
+    border: 0px solid black;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Rufina', serif;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Review {
+    margin-left: 15px;
+}
+
+.User {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 30px;
+}
+
+.User img {
+    width: 60px;
+    height: auto;
+}
+
+.User a {
+    text-decoration: none;
+    color: #5e6600;
+    font-weight: 600;
+}
+
+.Text_Review h1 {
+    font-size: 50px;
+}
+
+.Text_Review p {
+    font-size: 20px;
+    color: #4d4d4d;
+}
+
+.Text_Review hr {
+    border: none;
+    border-top: 3px dotted black;
+}
+
+.Text_Review a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.Text_Review img {
+    width: 32px;
+    height: auto;
+    padding-top: 10px;
+}
+
+/* Reservation Form */
+
+.Reservation_Home{
+    background-color: #ebf0e4;
+    margin-top: 160px;
+    padding: 40px;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 150px;
+    padding-top: 40px;
+}
+
+.Text_Form_Home {
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.Text_Form_Home h1 {
+    font-size: 70px;
+}
+
+.Text_Form_Home p {
+    font-size: 20px;
+    color: gray;
+    position: absolute;
+    margin-top: 130px;
+
+}
+
+.Form_Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.Form_Home select, .Form_Home input {
+    width: 100%;
+    padding: 12px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: 'Rufina', serif;
+    box-sizing: border-box;
+}
+
+.Time {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.Time select, .Time input {
+    width: 200px;
+}
+
+.Guests_Home select {
+    width: 180px;
+    height: 48px;
+}
+
+.Submit_Btn_Home {
+    margin-top: 50px;
+    width: 250px;
+    color: white;
+    background-color: #233000;
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Rufina', serif;
+    cursor: pointer;
+}
+
+/* Category */
+
+.Category {
+    margin-top: 35px;
+}
+
+.Category_Text {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.Category_Text h1 {
+    font-size: 70px;
+}
+
+.Category_Text p {
+    font-size: 25px;
+    color: gray;
+    position: absolute;
+    margin-top: 228px;
+}
+
+.Menu_Category {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.Menu_Category div {
+    position: relative;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.Menu_Category img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.Menu_Category a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #233000;
+    text-decoration: none;
+    z-index: 2;
+    margin-top: 40px;
+}
+
+.Category_Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.Menu_Category a:last-child {
+    top: 10px;
+    right: 10px;
+    left: auto;
+}
+
+.Menu_Category a:last-child img {
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Testimonials */
+
+.Testimonials {
+    margin-bottom: 130px;
+    margin-top: 200px;
+}
+
+.Slider_Text {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.Slider_Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.User_Bloger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 300px;
+}
+
+.User_Bloger_Text {
+    margin-left: 15px;
+}
+
+.User_Bloger_Text :nth-child(1) {
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.User_Bloger_Text :nth-child(2){
+    color: #4d4d4d;
+    font-size: 20px;
+}
+
+.Slider_Btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 400px;
+}
+
+.Slider_Btn img {
+    width: 30px;
+}
+
+.Slider_Btn p {
+    font-size: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.Slide_Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 180px;
+    margin-bottom: 220px;
+}
+
+.Slider_Text,
+.User_Bloger {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.slide-out {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+/* Footer */
+
+footer{
+    background-color: #233000;
+    padding-top: 50px;
+}
+
+.footer h1 {
+    color: white;
+}
+
+.footer h2 {
+    color: white;
+}
+
+.footer p {
+    color: white;
+}
+
+footer h1 {
+    font-size: 40px;
+}
+
+footer input {
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Rufina', serif;
+}
+
+footer button {
+    color: white;
+    background-color: #5e6600;
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Rufina', serif;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.Text_Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.Footer_Number {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.Subscribe p {
+    font-size: 13px;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px dashed white;
+    margin-top: 70px;
+}
+
+.Contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Contacts img {
+    width: 150px;
+    height: auto;
+}
+
+
+@media (max-width: 1288px) {
+    .Subscribe {
+        display: none;
+    }
+}
+
+@media (max-width: 1474px) {
+    .Menu_Category img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1980px) {
+    .Food_Second img {
+        width: 600px;
+    }
+    .Seasoning_Second img {
+        width: 400px;
+    }
+}

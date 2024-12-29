@@ -15,7 +15,7 @@ function Menu() {
             <header className="Header_Menu">
                 <div className="Navigation">
                     <div className="First">
-                        <a href="#menu"><img src="src/components/menu/img/Logo.png" alt="Logo" className="Logo"/></a>
+                    <Link to="/home"><img src="src/components/contact/img/Logo.png" alt="Logo" className="Logo"/></Link>
                         <div className="Navigation_btn">
                             <button className={`menu-open ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
                                 <span></span>
@@ -28,17 +28,29 @@ function Menu() {
                         <p className="Number">+86 852 346 000</p>
                         <button className="Reservations">Reservations</button>
                     </div>
-                    <nav className={`SideMenu ${menuOpen ? "open" : ""}`}>
+                    <nav className={`SideMenu_Menu ${menuOpen ? "open" : ""}`}>
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#menu">Menu</a></li>
+                            <Link to="/home">
+                                <li><a href="#home">Home</a></li>
+                            </Link>
+                            <Link to="/menu">
+                                <li><a href="#menu">Menu</a></li>
+                            </Link>
                             <Link to="/contact">
                                 <li><a href="#contact">Contact</a></li>
                             </Link>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#portfolio">Portfolio - Grids</a></li>
-                            <li><a href="#blogs">Blogs</a></li>
-                            <li><a href="#post">Post</a></li>
+                            <Link to="/about">
+                                <li><a href="#about">About</a></li>
+                            </Link>
+                            <Link to="/portfolio">
+                                <li><a href="#portfolio">Portfolio - Grids</a></li>
+                            </Link>
+                            <Link to="/blogs">
+                                <li><a href="#blogs">Blogs</a></li>    
+                            </Link>
+                            <Link to="/post">
+                                <li><a href="#post">Post</a></li>
+                            </Link>
                         </ul>
                     </nav>
                 </div>

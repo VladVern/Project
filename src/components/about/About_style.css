@@ -1,0 +1,561 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rufina', serif;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+.Header_About {
+    height: 690px;
+    background-image: url(./img/HeaderImg.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.Navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.First {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Logo {
+    width: 307px;
+    height: 115px;
+    margin-right: 50px;
+}
+
+/*open menu*/
+
+.menu-open {
+    position: relative;
+    width: 50px;
+    height: 30px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-open span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 1px;
+    transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+}
+
+.menu-open span:nth-child(1) {
+    top: 0;
+    transform: rotate(0);
+}
+
+.menu-open span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.menu-open span:nth-child(3) {
+    bottom: 0;
+    transform: rotate(0);
+}
+
+.menu-open.open span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.menu-open.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-open.open span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+/*  */
+
+.SideMenu_About {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 100%;
+    background-color: #4d4d4d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 500;
+}
+
+.SideMenu_About.open {
+    right: 0;
+}
+
+.SideMenu_About ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.SideMenu_About li {
+    margin: 20px 0;
+}
+
+.SideMenu_About a:nth-child(4) li a {
+    color: #9caa00;
+}
+
+.SideMenu_About a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.SideMenu_About a:hover {
+    color: #9caa00;
+}
+
+/*open menu*/
+
+.Number {
+    color: white;
+    font-size: 18px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    margin-right: 25px;
+
+}
+
+.Reservations {
+    color: white;
+    font-weight: 950px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'Rufina', serif;
+}
+
+.Headline_Hero_Text_About {
+    margin-left: 1000px;
+    margin-top: 110px;
+}
+
+.Headline_Hero_Text_About h1{
+    color: white;
+    font-size: 90px;
+    font-weight: 520;
+    margin-bottom: 20px;
+}
+
+.Headline_Hero_Text_About p{
+    color: white;
+    font-size: 22px;
+}
+
+/* Header */
+
+/* Our_Story */
+
+.Our_Story {
+    margin-top: 70px;
+}
+
+.Tomato {
+    position: absolute;
+    z-index: 0;    
+    width: 260px;
+    height: auto;
+    left: 40%;
+}
+
+.Our_Story_Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+
+.Our_Story_Text h1 {
+    font-size: 70px;
+}
+
+.Our_Story_Text p {
+    font-size: 20px;
+    position: absolute;
+    margin-top: -30px;
+    color: #4d4d4d;
+}
+
+.Our_Story_Items img {
+    position: relative;
+    z-index: 1;
+}
+
+/* Staff */
+
+.Staff {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Manager_p {
+    text-align: right;
+    color: #4d4d4d;
+    font-size: 20px;
+}
+
+.Chef_p {
+    color: #4d4d4d;
+    font-size: 20px;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+.Staff_Manager img {
+    width: 600px;
+    height: auto;
+    margin-bottom: 200px;
+}
+
+.Staff_Chef img {
+    width: 600px;
+    height: auto;
+}
+
+.Staff_Text{
+    text-align: center;
+}
+
+.Staff_Text h1 {
+    font-size: 60px;
+}
+
+.Staff_Text p {
+    font-size: 25px;
+    color: #4d4d4d;
+}
+
+/* Our Story Video */
+
+.Our_Story_Video {
+    height: 690px;
+    background: linear-gradient(rgba(35, 48, 0, 0.8), rgba(35, 48, 0, 0.7)), url(./img/Video.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.Video_Text {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+.Video_Text h1 {
+    font-size: 80px;
+    color: white;
+}
+
+.Video_Text p {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    margin-top: 150px;
+}
+
+.Play_Icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Process */
+
+.Rosemary_First {
+    position: absolute;
+    right: 0;
+    top: 3800px;
+}
+
+.Process h1 {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 250px;
+}
+
+.Slice {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.Slice img {
+    width: 700px;
+    height: auto;
+}
+
+.Slice_Text h2 {
+    font-size: 60px;
+}
+
+.Slice_Text p {
+    font-size: 20px;
+    color: #4d4d4d;
+}
+
+.Pickled_Bake {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Bake h2 {
+    font-size: 60px;
+}
+
+.Bake p {
+    font-size: 20px;
+    color: #4d4d4d;
+}
+
+.Bake img {
+    width: 600px;
+    height: auto;
+}
+
+.Pickled h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.Pickled p {
+    font-size: 20px;
+    color: #4d4d4d;
+    text-align: left;
+    margin-left: 170px;
+}
+
+.Pickled img {
+    width: 600px;
+    height: auto;
+}
+
+/* Reservation Form */
+
+.Reservation_Form_About {
+    background-color: #ebf0e4;
+    margin-top: 50px;
+    padding: 40px;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 150px;
+    padding-top: 40px;
+}
+
+.Text_Form_Menu {
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.Text_Form_Menu h1 {
+    font-size: 70px;
+}
+
+.Text_Form_Menu p {
+    font-size: 20px;
+    color: gray;
+    position: absolute;
+    margin-top: 130px;
+
+}
+
+.Form_Menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.Form_Menu select, .Form_Menu input {
+    width: 100%;
+    padding: 12px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: 'Rufina', serif;
+    box-sizing: border-box;
+}
+
+.Time {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.Time select, .Time input {
+    width: 200px;
+}
+
+.Guests_Menu select {
+    width: 180px;
+    height: 48px;
+}
+
+.Submit_Btn_Menu {
+    margin-top: 50px;
+    width: 250px;
+    color: white;
+    background-color: #233000;
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Rufina', serif;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    background-color: #233000;
+    padding-top: 50px;
+}
+
+.footer h1 {
+    color: white;
+}
+
+.footer h2 {
+    color: white;
+}
+
+.footer p {
+    color: white;
+}
+
+footer h1 {
+    font-size: 40px;
+}
+
+footer input {
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Rufina', serif;
+}
+
+footer button {
+    color: white;
+    background-color: #5e6600;
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Rufina', serif;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.Text_Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.Footer_Number {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.Subscribe p {
+    font-size: 13px;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px dashed white;
+    margin-top: 70px;
+}
+
+.Contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Contacts img {
+    width: 150px;
+    height: auto;
+}
+
+@media (max-width: 1288px) {
+    .Subscribe {
+        display: none;
+    }
+}
+
+@media (max-width: 1469px) {
+    .Headline_Hero_Text_About {
+        margin-left: 600px;
+    }
+}

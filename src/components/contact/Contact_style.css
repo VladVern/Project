@@ -13,7 +13,7 @@ body {
 
 .Header_Contact {
     height: 690px;
-    background-image: url(./img/HeaderImg.png); 
+    background-image: url(../../assets/contact/HeaderImg.png); 
     background-repeat: no-repeat;
     background-size: cover;
 }

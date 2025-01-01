@@ -1,6 +1,30 @@
 import "./Home_style.css"
 import { useState } from "react"
 import { Link } from "react-router-dom";
+import Avatar from "../../assets/home/Avatar.png"
+import Avatar_First from "../../assets/home/Avatar_First.png"
+import Avatar_Second from "../../assets/home/Avatar_Second.png"
+import Chef from "../../assets/home/Chef.png"
+import CircleIcon_First from "../../assets/home/CircleIcon_First.png"
+import CircleIcon_Second from "../../assets/home/CircleIcon_Second.png"
+import CircleIcon_Third from "../../assets/home/CircleIcon_Third.png"
+import Featur_First from "../../assets/home/Feature_First.png"
+import Featur_Second from "../../assets/home/Feature_Second.png"
+import food_first from "../../assets/home/food_first.png"
+import food_second from "../../assets/home/food_second.png"
+import Icon_arrow_left from "../../assets/home/Icon_arrow-left.png"
+import Icon_arrow_right from "../../assets/home/Icon_arrow-right.png"
+import Leaf_First from "../../assets/home/Leaf_First.png"
+import Leaf_Second from "../../assets/home/Leaf_Second.png"
+import leaves from "../../assets/home/leaves.png"
+import Logo from "../../assets/home/Logo.png"
+import Mains_Category from "../../assets/home/Mains_Category.png"
+import seasoning_first from "../../assets/home/seasoning_first.png"
+import seasoning_second from "../../assets/home/seasoning_second.png"
+import Social_Media from "../../assets/home/Social_Media.png"
+import Soups_Category from "../../assets/home/Soups_Category.png"
+import Starters_Category from "../../assets/home/Starters_Category.png"
+import Vector from "../../assets/home/Vector.png"
 
 //Slider
 const testimonials = [
@@ -9,7 +33,7 @@ const testimonials = [
         user: {
             name: "John Doe",
             role: "Bloger",
-            avatar: "src/components/home/img/Avatar.png"
+            avatar: Avatar
         }
     },
     {
@@ -17,7 +41,7 @@ const testimonials = [
         user: {
             name: "Jane Smith",
             role: "Influencer",
-            avatar: "src/components/home/img/Avatar.png"
+            avatar: Avatar
         }
     },
     {
@@ -25,7 +49,7 @@ const testimonials = [
         user: {
             name: "Alice Johnson",
             role: "Writer",
-            avatar: "src/components/home/img/Avatar.png"
+            avatar: Avatar
         }
     }
 ]
@@ -71,7 +95,7 @@ function Home() {
             <header className="Header_Home">
                 <div className="Navigation">
                     <div className="First">
-                    <Link to="/home"><img src="src/components/home/img/Logo.png" alt="Logo" className="Logo"/></Link>
+                    <Link to="/home"><img src={Logo} alt="Logo" className="Logo"/></Link>
                         <div className="Navigation_btn">
                             <button className={`menu-open ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
                                 <span></span>
@@ -130,19 +154,19 @@ function Home() {
                         <hr />
                     </div>
                     <div className="Food_First">
-                        <img src="src/components/home/img/food_first.png" alt="Food_First" />
-                        <img src="src/components/home/img/seasoning_first.png" className="Seasoning_First" alt="Seasoning First" />
+                        <img src={food_first} alt="Food_First" />
+                        <img src={seasoning_first} className="Seasoning_First" alt="Seasoning First" />
                     </div>
                 </div>
                 <div className="Text_Home_Food_Second">
                     <div className="Food_Second">
-                        <img src="src/components/home/img/food_second.png" alt="Food Second" />
+                        <img src={food_second} alt="Food Second" />
                         <h1>Start to plan <br /> your diet today</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing <br /> elit. Neque congue arcu</p>
                     </div>
                     <div className="Seasoning_Second">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing <br /> elit. Neque congue arcu</p>
-                        <img src="src/components/home/img/seasoning_second.png" alt="Seasoning Second" />
+                        <img src={seasoning_second} alt="Seasoning Second" />
                     </div>
                 </div>
             </header>
@@ -153,7 +177,7 @@ function Home() {
                         <p>This a section of your menu. Give your section <br /> a brief brief description</p>
                     </div>
                 </div> 
-                <img src="src/components/home/img/leaves.png" className="Leaves" alt="Leaves" />
+                <img src={leaves} className="Leaves" alt="Leaves" />
                 <div className="Price_Home_Items">
                     <div className="Price_Home_First">
                         <div className="Home_Item">
@@ -196,30 +220,30 @@ function Home() {
             <div className="Excellent_Cook">
                 <div className="Excellent_Cook_Items">
                     <div className="Image_Excellent_Cook">
-                        <img src="src/components/home/img/Leaf_First.png" className="Leaf_First" alt="" />
-                        <img src="src/components/home/img/Chef.png" className="Chef" alt="Chef" />
+                        <img src={Leaf_First} className="Leaf_First" alt="" />
+                        <img src={Chef} className="Chef" alt="Chef" />
                     </div>
                     <div className="Text_Image_Excellent_Cook">
                         <h1>Excellent <br /> cook</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Purus lorem id penatibus imperdiet. Turpis egestas ultricies <br /> purus auctor tincidunt lacus nunc. </p>
-                        <img src="src/components/home/img/Leaf_Second.png" alt="" />
+                        <img src={Leaf_Second} alt="" />
                     </div>
                 </div>
             </div>
             <div className="Features">
                 <div className="Features_Items">
                     <div className="Premium_Quality">
-                        <img src="src/components/home/img/CircleIcon_First.png" alt="CircleIcon First" />
+                        <img src={CircleIcon_First} alt="CircleIcon First" />
                         <h2>Premium Quality</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Neque congue arcu</p>
                     </div>
                     <div className="Seasonal_Vegetables">
-                        <img src="src/components/home/img/CircleIcon_Second.png" alt="CircleIcon Second" />
+                        <img src={CircleIcon_Second} alt="CircleIcon Second" />
                         <h2>Seasonal Vegetables</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Neque congue arcu</p>
                     </div>
                     <div className="Fresh_Fruit">
-                        <img src="src/components/home/img/CircleIcon_Third.png" alt="CircleIcon Third" />
+                        <img src={CircleIcon_Third} alt="CircleIcon Third" />
                         <h2>Fresh Fruit</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Neque congue arcu</p>
                     </div>
@@ -228,37 +252,37 @@ function Home() {
             <div className="Recent_Post">
                 <div className="Blog_First">
                     <div className="Foto_Blog">
-                        <img src="src/components/home/img/Feature_First.png" alt="Food"/>
+                        <img src={Featur_First} alt="Food"/>
                         <button className="Fashion">Fashion</button>
                     </div>
                     <div className="Review">
                         <div className="User">
-                            <img src="src/components/home/img/Avatar_First.png" alt="Avatar" />
+                            <img src={Avatar_First} alt="Avatar" />
                             <a href="#">Julie Christie  •  October 17,2021  •  3:33  •  2 comments</a>  
                         </div>
                         <div className="Text_Review">
                             <h1>Fruit and vegetables and <br /> protection against diseases</h1>
                             <hr />
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="#">Read More <img src="src/components/home/img/Vector.png" alt="Vector" /></a>
+                            <a href="#">Read More <img src={Vector} alt="Vector" /></a>
                         </div>
                     </div>
                 </div>
                 <div className="Blog_Second">
                     <div className="Foto_Blog">
-                        <img src="src/components/home/img/Feature_Second.png" alt="Food"/>
+                        <img src={Featur_Second} alt="Food"/>
                         <button className="Fashion">Fashion</button>
                     </div>
                     <div className="Review">
                         <div className="User">
-                            <img src="src/components/home/img/Avatar_Second.png" alt="Avatar" />
+                            <img src={Avatar_Second} alt="Avatar" />
                             <a href="#">Dianne Russell  •  October 17,2021  •  3:33  •  2 comments</a>   
                         </div>
                         <div className="Text_Review">
                             <h1>Aspargus Spring Salad with <br /> Rocket, Goat's Cheese</h1>
                             <hr />
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="#">Read More <img src="src/components/home/img/Vector.png" alt="Vector" /></a>
+                            <a href="#">Read More <img src={Vector} alt="Vector" /></a>
                         </div>
                     </div>
                 </div>
@@ -300,23 +324,23 @@ function Home() {
                     <div className="Starters_Category">
                         <div className="Category_Items">
                             <a href="#">Starters</a>
-                            <a href="#"><img src="src/components/home/img/Vector.png" alt="Arrow" /></a>
+                            <a href="#"><img src={Vector} alt="Arrow" /></a>
                         </div>
-                        <img src="src/components/home/img/Starters_Category.png" alt="Starters" className="Starters_Category_Img"/>
+                        <img src={Starters_Category} alt="Starters" className="Starters_Category_Img"/>
                     </div>
                     <div className="Mains_Category">
                         <div className="Category_Items">
                             <a href="#">Mains</a>
-                            <a href="#"><img src="src/components/home/img/Vector.png" alt="Arrow" /></a>
+                            <a href="#"><img src={Vector} alt="Arrow" /></a>
                         </div>
-                        <img src="src/components/home/img/Mains_Category.png" alt="Mains" className="Mains_Category_Img"/>
+                        <img src={Mains_Category} alt="Mains" className="Mains_Category_Img"/>
                     </div>
                     <div className="Soups_Category">
                         <div className="Category_Items">
                             <a href="#">Soups</a>
-                            <a href="#"><img src="src/components/home/img/Vector.png" alt="Arrow" /></a>
+                            <a href="#"><img src={Vector} alt="Arrow" /></a>
                         </div>
-                        <img src="src/components/home/img/Soups_Category.png" alt="Soups" className="Soups_Category_Img"/>
+                        <img src={Soups_Category} alt="Soups" className="Soups_Category_Img"/>
                     </div>
                 </div>
             </div>
@@ -334,11 +358,11 @@ function Home() {
                     </div>
                     <div className="Slider_Btn">
                         <a href="#" onClick={handlePrev}>
-                            <img src="src/components/home/img/Icon_arrow-left.png" alt="Previous" />
+                            <img src={Icon_arrow_left} alt="Previous" />
                         </a>
                         <p>{currentIndex + 1}/{testimonials.length}</p>
                         <a href="#" onClick={handleNext}>
-                            <img src="src/components/home/img/Icon_arrow-right.png" alt="Next" />
+                            <img src={Icon_arrow_right} alt="Next" />
                         </a>
                     </div>
                 </div>
@@ -376,7 +400,7 @@ function Home() {
                 <hr />
                 <div className="Contacts">
                     <p>© 2020 Zero Inc. All rights Reserved</p>
-                    <img src="src/components/contact/img/Social_Media.png" alt="Social Media" />
+                    <img src={Social_Media} alt="Social Media" />
                 </div>
             </footer>
         </div>

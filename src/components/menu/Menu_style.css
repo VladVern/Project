@@ -13,7 +13,7 @@ body {
 
 .Header_Menu {
     height: 690px;
-    background-image: url(./img/HeaderImg.png); 
+    background-image: url(../../assets/menu/HeaderImg.png); 
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;

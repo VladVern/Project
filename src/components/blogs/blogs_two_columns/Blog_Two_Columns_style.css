@@ -13,7 +13,7 @@ body {
 
 .Header_Blog_Two {
     height: 690px;
-    background-image: url(./img/Header.png); 
+    background-image: url(../../../assets/blogs/blogs_two_columns/Header.png); 
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;

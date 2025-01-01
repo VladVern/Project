@@ -1,6 +1,13 @@
 import "./Menu_style.css"
 import { useState } from "react"
 import { Link } from "react-router-dom";
+import Avocado from "../../assets/menu/Avocado.png"
+import Blueberry from "../../assets/menu/Blueberry.png"
+import Food_Starters from "../../assets/menu/Food_Starters.png"
+import Logo from "../../assets/menu/Logo.png"
+import Mains from "../../assets/menu/Mains.png"
+import Pastries_Drinks from "../../assets/menu/Pastries_Drinks.png"
+import Social_Media from "../../assets/menu/Social_Media.png"
 
 function Menu() {
     // Menu
@@ -15,7 +22,7 @@ function Menu() {
             <header className="Header_Menu">
                 <div className="Navigation">
                     <div className="First">
-                    <Link to="/home"><img src="src/components/contact/img/Logo.png" alt="Logo" className="Logo"/></Link>
+                    <Link to="/home"><img src={Logo} alt="Logo" className="Logo"/></Link>
                         <div className="Navigation_btn">
                             <button className={`menu-open ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
                                 <span></span>
@@ -72,13 +79,13 @@ function Menu() {
                 </div>
             </header>
             <div className="Starters">
-                <img src="src/components/menu/img/Blueberry.png" alt="Blueberry" className="Blueberry" />
+                <img src={Blueberry} alt="Blueberry" className="Blueberry" />
                 <div className="Text_Starters">
                     <h1>Starters</h1>
                     <p>This is a section of your menu. Give your section a brief description</p>
                 </div>
                 <div className="Price_Starters_Items">
-                    <img src="src/components/menu/img/Food_Starters.png" alt="Food_Starters" />
+                    <img src={Food_Starters} alt="Food_Starters" />
                     <div className="Price_S">
                         <div className="Menu_Item">
                             <span className="Price">$20</span>
@@ -139,17 +146,17 @@ function Menu() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
                         </div>
                     </div>
-                    <img src="src/components/menu/img/Mains.png" alt="Food_Mains" />
+                    <img src={Mains} alt="Food_Mains" />
                 </div>
             </div>
             <div className="Pastries_Drinks">
-                <img src="src/components/menu/img/Avocado.png" alt="Avocado" className="Avocado" />
+                <img src={Avocado} alt="Avocado" className="Avocado" />
                 <div className="Text_Pastries_Drinks">
                     <h1>Pastries & Drinks</h1>
                     <p>This is a section of your menu. Give your section a brief description</p>
                 </div>
                 <div className="Price_Pastries_Drinks_Items">
-                    <img src="src/components/menu/img/Pastries_Drinks.png" alt="Pastries_Drinks" />
+                    <img src={Pastries_Drinks} alt="Pastries_Drinks" />
                     <div className="Price_S">
                         <div className="Menu_Item">
                             <span className="Price">$158</span>
@@ -239,7 +246,7 @@ function Menu() {
                 <hr />
                 <div className="Contacts">
                     <p>© 2020 Zero Inc. All rights Reserved</p>
-                    <img src="src/components/contact/img/Social_Media.png" alt="Social Media" />
+                    <img src={Social_Media} alt="Social Media" />
                 </div>
             </footer>
         </div>

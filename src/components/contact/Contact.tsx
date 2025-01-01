@@ -1,6 +1,12 @@
 import "./Contact_style.css"
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import Logo from "../../assets/contact/Logo.png"
+import Adress_Location_First from "../../assets/contact/Adress+Location+First.png"
+import Adress_Location_Second from "../../assets/contact/Adress+Location+Second.png"
+import Mint from "../../assets/contact/Mint.png"
+import Orange from "../../assets/contact/Orange.png"
+import Social_Media from "../../assets/contact/Social_Media.png"
 
 function Contact() {
     // Menu
@@ -56,7 +62,7 @@ function Contact() {
             <header className="Header_Contact">
                 <div className="Navigation">
                     <div className="First">
-                        <Link to="/home"><img src="src/components/contact/img/Logo.png" alt="Logo" className="Logo"/></Link>
+                        <Link to="/home"><img src={Logo} alt="Logo" className="Logo"/></Link>
                         <div className="Navigation_btn">
                             <button className={`menu-open ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
                                 <span></span>
@@ -133,9 +139,9 @@ function Contact() {
                 </div>
             </header>
             <div className="Adress_Location">
-                <img className="Orange" src="src\components\contact\img\Orange.png" alt="Orange" />
+                <img className="Orange" src={Orange} alt="Orange" />
                 <div className="Contact">
-                    <img src="src\components\contact\img\Adress+Location+First.png" alt="Adress+Location+First" />
+                    <img src={Adress_Location_First} alt="Adress+Location+First" />
                     <div className="Text_Contact">
                         <p>We can be contacted via</p>
                         <p>email  <span>info@foodzero.com</span> </p>
@@ -148,11 +154,11 @@ function Contact() {
                         <p>City, CA, 90230</p>
                         <button className="Btn_maps">View in maps</button>
                     </div>
-                    <img src="src\components\contact\img\Adress+Location+Second.png" alt="Adress+Location+Second" />
+                    <img src={Adress_Location_Second} alt="Adress+Location+Second" />
                 </div>
             </div>
             <div className="Reservation_Form">
-                <img src="src\components\contact\img\Mint.png" alt="Mint" className="Mint"/>
+                <img src={Mint} alt="Mint" className="Mint"/>
                 <div className="Text_Form">
                     <h1>Make a Reservation</h1>
                     <p>Get in touch with restaurant</p>
@@ -230,7 +236,7 @@ function Contact() {
                 <hr />
                 <div className="Contacts">
                     <p>© 2020 Zero Inc. All rights Reserved</p>
-                    <img src="src/components/contact/img/Social_Media.png" alt="Social Media" />
+                    <img src={Social_Media} alt="Social Media" />
                 </div>
             </footer>
          </div>

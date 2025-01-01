@@ -1,6 +1,18 @@
 import "./About_style.css"
 import { useState } from "react"
 import { Link } from "react-router-dom";
+import Logo from "../../assets/about/Logo.png"
+import Social_Media from "../../assets/about/Social_Media.png"
+import Tomato from "../../assets/about/Tomato.png"
+import Bake from "../../assets/about/Bake.png"
+import Chef from "../../assets/about/Chef.png"
+import Manager from "../../assets/about/Manager.png"
+import Pickled from "../../assets/about/Pickled.png"
+import Play from "../../assets/about/Play.png"
+import Rosemary_First from "../../assets/about/Rosemary_First.png"
+import Rosemary_Second from "../../assets/about/Rosemary_Second.png"
+import Slice from "../../assets/about/Slice.png"
+import Our_Story from "../../assets/about/Our_Story.png"
 
 function About() {
     // Menu
@@ -15,7 +27,7 @@ function About() {
             <header className="Header_About">
                 <div className="Navigation">
                     <div className="First">
-                    <Link to="/home"><img src="src/components/about/img/Logo.png" alt="Logo" className="Logo"/></Link>
+                    <Link to="/home"><img src={Logo} alt="Logo" className="Logo"/></Link>
                         <div className="Navigation_btn">
                             <button className={`menu-open ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
                                 <span></span>
@@ -72,13 +84,13 @@ function About() {
                 </div>
             </header>
             <div className="Our_Story">
-                <img src="src/components/about/img/Tomato.png" alt="Tomato" className="Tomato"/>
+                <img src={Tomato} alt="Tomato" className="Tomato"/>
                 <div className="Our_Story_Items">
                     <div className="Our_Story_Text">
                         <h1>Our Story</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus <br /> lorem id penatibus imperdiet. Turpis egestas ultricies purus <br /> auctor tincidunt lacus nunc.</p>
                     </div>
-                    <img src="src/components/about/img/Our_Story.png" alt="Our Story" />
+                    <img src={Our_Story} alt="Our Story" />
                 </div>
             </div>
             <div className="Staff">
@@ -88,7 +100,7 @@ function About() {
                             <h1>Restaran Manager</h1>
                             <p>Carson Hugn</p>
                         </div>
-                        <img src="src/components/about/img/Manager.png" alt="Manager" />
+                        <img src={Manager} alt="Manager" />
                         <p className="Manager_p">Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Et in sed in pellentesque ornare <br /> nunc nisl. Augue habitant accumsan, ut <br /> parturient orci ac etiam congue mi.</p>
                     </div>
                 </div>  
@@ -99,7 +111,7 @@ function About() {
                             <h1>Executive Chef</h1>
                             <p>Jane Cooper</p>
                         </div>
-                        <img src="src/components/about/img/Chef.png" alt="Chef" />
+                        <img src={Chef} alt="Chef" />
                     </div>
                 </div> 
             </div>
@@ -108,15 +120,15 @@ function About() {
                     <h1>It looks delicious</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <div className="Play_Icon"> 
-                        <img src="src/components/about/img/Play.png" alt="Play"/>
+                        <img src={Play} alt="Play"/>
                     </div> 
                 </div>
             </div>
             <div className="Process">
-                <img src="src/components/about/img/Rosemary_First.png" alt="Rosemary" className="Rosemary_First"/>
+                <img src={Rosemary_First} alt="Rosemary" className="Rosemary_First"/>
                 <h1>Sophisticated Process</h1>
                 <div className="Slice">
-                    <img src="src/components/about/img/Slice.png" alt="Slice" />
+                    <img src={Slice} alt="Slice" />
                     <div className="Slice_Text">
                         <h2>01.Slice</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Purus lorem id penatibus imperdiet. Turpis egestas <br /> ultricies purus auctor tincidunt lacus nunc. Convallis <br /> pellentesque quis fringilla sagittis. Egestas in risus sit <br /> nunc nunc, arcu donec nam etiam. </p>
@@ -126,15 +138,15 @@ function About() {
                     <div className="Bake">
                         <h2>03.Bake</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Purus lorem id penatibus imperdiet. </p>
-                        <img src="src/components/about/img/Bake.png" alt="Bake" />
+                        <img src={Bake} alt="Bake" />
                     </div>
                     <div className="Pickled">
-                        <img src="src/components/about/img/Pickled.png" alt="Pickled"/>
+                        <img src={Pickled} alt="Pickled"/>
                         <h2>02.Pickled</h2>
                         <p>Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Purus lorem <br /> id penatibus imperdiet.</p>
                     </div>
                 </div>
-                <img src="src/components/about/img/Rosemary_Second.png" alt="Rosemary" className="Rosemary_Second"/>
+                <img src={Rosemary_Second} alt="Rosemary" className="Rosemary_Second"/>
             </div>
             <div className="Reservation_Form_About">
                 <div className="Text_Form_Menu">
@@ -197,7 +209,7 @@ function About() {
                 <hr />
                 <div className="Contacts">
                     <p>© 2020 Zero Inc. All rights Reserved</p>
-                    <img src="src/components/about/img/Social_Media.png" alt="Social Media" />
+                    <img src={Social_Media} alt="Social Media" />
                 </div>
             </footer>
         </div>

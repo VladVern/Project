@@ -1,6 +1,19 @@
 import "./Blog_One_Column_style.css"
 import { useState } from "react"
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+import Logo from '../../../assets/blogs/blog_one_column/Logo.png'
+import Feature_First from '../../../assets/blogs/blog_one_column/Feature_First.png'
+import Feature_Second from '../../../assets/blogs/blog_one_column/Feature_Second.png'
+import Feature_Third from '../../../assets/blogs/blog_one_column/Feature_Third.png'
+import Feature_Fourth from '../../../assets/blogs/blog_one_column/Feature_Fourth.png'
+import Feature_Sixth from '../../../assets/blogs/blog_one_column/Feature_Sixth.png'
+import Avatar_First from '../../../assets/blogs/blog_one_column/Avatar_First.png'
+import Avatar_Second from '../../../assets/blogs/blog_one_column/Avatar_Second.png'
+import Avatar_Third from '../../../assets/blogs/blog_one_column/Avatar_Third.png'
+import Avatar_Fourth from '../../../assets/blogs/blog_one_column/Avatar_Fourth.png'
+import Avatar_Sixth from '../../../assets/blogs/blog_one_column/Avatar_Sixth.png'
+import Vector from '../../../assets/blogs/blog_one_column/Vector.png'
+import Social_Media from '../../../assets/blogs/blog_one_column/Social_Media.png'
 
 function Blog_One_Column() {
     // Menu
@@ -15,7 +28,7 @@ function Blog_One_Column() {
             <header className="Header_Blog_One">
                 <div className="Navigation">
                     <div className="First">
-                        <Link to="/home"><img src="src/components/blogs/blog_one_column/img/Logo.png" alt="Logo" className="Logo"/></Link>
+                        <Link to="/home"><img src={Logo} alt="Logo" className="Logo" /></Link>
                         <div className="Navigation_btn">
                             <button className={`menu-open ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
                                 <span></span>
@@ -51,10 +64,10 @@ function Blog_One_Column() {
                             </Link>
                             <h1>Blogs</h1>
                             <Link to="/blogs_two_columns">
-                                <li><a href="#blogs_two_columns">Blogs - Two Columns</a></li>    
+                                <li><a href="#blogs_two_columns">Blogs - Two Columns</a></li>
                             </Link>
                             <Link to="/blogs_one_columns">
-                                <li><a href="#blogs_one_columns">Blogs - One Columns</a></li>    
+                                <li><a href="#blogs_one_columns">Blogs - One Columns</a></li>
                             </Link>
                             <h1>Post</h1>
                             <Link to="/single_post_whith_slidebar">
@@ -77,91 +90,91 @@ function Blog_One_Column() {
             <div className="Recent_Post_Blog_One_Columns_First">
                 <div className="Blog_One_Columns">
                     <div className="Foto_Blog_One_Columns">
-                        <img src="src/components/blogs/blog_one_column/img/Feature_First.png" alt="Food"/>
+                        <img src={Feature_First} alt="Food" />
                         <button className="Fashion">Fashion</button>
                     </div>
                     <div className="Review_One_Columns">
                         <div className="User_One_Columns">
-                            <img src="src/components/blogs/blog_one_column/img/Avatar_First.png" alt="Avatar" />
-                            <a href="#">Julie Christie  •  October 17,2021  •  3:33  •  2 comments</a>  
+                            <img src={Avatar_First} alt="Avatar" />
+                            <a href="#">Julie Christie  •  October 17,2021  •  3:33  •  2 comments</a>
                         </div>
                         <div className="Text_Review_One_Columns">
                             <h1>Fruit and vegetables and <br /> protection against diseases</h1>
                             <hr />
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="#">Read More <img src="src/components/blogs/blog_one_column/img/Vector.png" alt="Vector" /></a>
+                            <a href="#">Read More <img src={Vector} alt="Vector" /></a>
                         </div>
                     </div>
                 </div>
                 <div className="Blog_One_Columns">
                     <div className="Foto_Blog_One_Columns">
-                        <img src="src/components/blogs/blog_one_column/img/Feature_Second.png" alt="Food"/>
+                        <img src={Feature_Second} alt="Food" />
                         <button className="Fashion">Fashion</button>
                     </div>
                     <div className="Review_One_Columns">
                         <div className="User_One_Columns">
-                            <img src="src/components/blogs/blog_one_column/img/Avatar_Second.png" alt="Avatar" />
-                            <a href="#">Dianne Russell  •  October 17,2021  •  3:33  •  2 comments</a>  
+                            <img src={Avatar_Second} alt="Avatar" />
+                            <a href="#">Dianne Russell  •  October 17,2021  •  3:33  •  2 comments</a>
                         </div>
                         <div className="Text_Review_One_Columns">
                             <h1>Asparagus Spring Salad with <br /> Rocket, Goat's Cheese</h1>
                             <hr />
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="#">Read More <img src="src/components/blogs/blog_one_column/img/Vector.png" alt="Vector" /></a>
+                            <a href="#">Read More <img src={Vector} alt="Vector" /></a>
                         </div>
                     </div>
                 </div>
                 <div className="Blog_One_Columns">
                     <div className="Foto_Blog_One_Columns">
-                        <img src="src/components/blogs/blog_one_column/img/Feature_Third.png" alt="Food"/>
+                        <img src={Feature_Third} alt="Food" />
                         <button className="Fashion">Fashion</button>
                     </div>
                     <div className="Review_One_Columns">
                         <div className="User_One_Columns">
-                            <img src="src/components/blogs/blog_one_column/img/Avatar_Third.png" alt="Avatar" />
-                            <a href="#">Jenifier Lopez  •  October 17,2021  •  3:33  •  2 comments</a>  
+                            <img src={Avatar_Third} alt="Avatar" />
+                            <a href="#">Jenifier Lopez  •  October 17,2021  •  3:33  •  2 comments</a>
                         </div>
                         <div className="Text_Review_One_Columns">
                             <h1>The Best Style of Dough for <br /> Dumplings</h1>
                             <hr />
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="#">Read More <img src="src/components/blogs/blog_one_column/img/Vector.png" alt="Vector" /></a>
+                            <a href="#">Read More <img src={Vector} alt="Vector" /></a>
                         </div>
                     </div>
                 </div>
                 <div className="Blog_One_Columns">
                     <div className="Foto_Blog_One_Columns">
-                        <img src="src/components/blogs/blog_one_column/img/Feature_Fourth.png" alt="Food"/>
+                        <img src={Feature_Fourth} alt="Food" />
                         <button className="Fashion">Fashion</button>
                     </div>
                     <div className="Review_One_Columns">
                         <div className="User_One_Columns">
-                            <img src="src/components/blogs/blog_one_column/img/Avatar_Fourth.png" alt="Avatar" />
-                            <a href="#">Theresa Webb  •  October 17,2021  •  3:33  •  2 comments</a>  
+                            <img src={Avatar_Fourth} alt="Avatar" />
+                            <a href="#">Theresa Webb  •  October 17,2021  •  3:33  •  2 comments</a>
                         </div>
                         <div className="Text_Review_One_Columns">
                             <h1>7 Reasons to Start Your Day <br /> With Lemon Water</h1>
                             <hr />
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="#">Read More <img src="src/components/blogs/blog_one_column/img/Vector.png" alt="Vector" /></a>
+                            <a href="#">Read More <img src={Vector} alt="Vector" /></a>
                         </div>
                     </div>
                 </div>
                 <div className="Blog_One_Columns">
                     <div className="Foto_Blog_One_Columns">
-                        <img src="src/components/blogs/blog_one_column/img/Feature_Sixth.png" alt="Food"/>
+                        <img src={Feature_Sixth} alt="Food" />
                         <button className="Fashion">Fashion</button>
                     </div>
                     <div className="Review_One_Columns">
                         <div className="User_One_Columns">
-                            <img src="src/components/blogs/blog_one_column/img/Avatar_Sixth.png" alt="Avatar" />
-                            <a href="#">Leslie Alexander  •  October 17,2021  •  3:33  •  2 comments</a>  
+                            <img src={Avatar_Sixth} alt="Avatar" />
+                            <a href="#">Leslie Alexander  •  October 17,2021  •  3:33  •  2 comments</a>
                         </div>
                         <div className="Text_Review_One_Columns">
                             <h1>12 Sparkling Wines We're <br /> Loving This Summer</h1>
                             <hr />
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="#">Read More <img src="src/components/blogs/blog_one_column/img/Vector.png" alt="Vector" /></a>
+                            <a href="#">Read More <img src={Vector} alt="Vector" /></a>
                         </div>
                     </div>
                 </div>
@@ -204,7 +217,7 @@ function Blog_One_Column() {
                 <hr />
                 <div className="Contacts">
                     <p>© 2020 Zero Inc. All rights Reserved</p>
-                    <img src="src/components/blogs/blog_one_column/img/Social_Media.png" alt="Social Media" />
+                    <img src={Social_Media} alt="Social Media" />
                 </div>
             </footer>
         </div>

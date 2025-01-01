@@ -30,7 +30,7 @@ function Menu() {
                     </div>
                     <nav className={`SideMenu_Menu ${menuOpen ? "open" : ""}`}>
                         <ul>
-                            <Link to="/home">
+                        <Link to="/home">
                                 <li><a href="#home">Home</a></li>
                             </Link>
                             <Link to="/menu">
@@ -42,14 +42,26 @@ function Menu() {
                             <Link to="/about">
                                 <li><a href="#about">About</a></li>
                             </Link>
-                            <Link to="/portfolio">
+                            <h1>Portfolio</h1>
+                            <Link to="/portfolio_grids">
                                 <li><a href="#portfolio">Portfolio - Grids</a></li>
                             </Link>
-                            <Link to="/blogs">
-                                <li><a href="#blogs">Blogs</a></li>    
+                            <Link to="/single_portfolio_no_slidebar">
+                                <li><a href="#portfolio">Single Portfolio - No Sidebar</a></li>
                             </Link>
-                            <Link to="/post">
-                                <li><a href="#post">Post</a></li>
+                            <h1>Blogs</h1>
+                            <Link to="/blogs_two_columns">
+                                <li><a href="#blogs_two_columns">Blogs - Two Columns</a></li>    
+                            </Link>
+                            <Link to="/blogs_one_columns">
+                                <li><a href="#blogs_one_columns">Blogs - One Columns</a></li>    
+                            </Link>
+                            <h1>Post</h1>
+                            <Link to="/single_post_whith_slidebar">
+                                <li><a href="#single_post_whith_slidebar">Single Post - whith Slidebar</a></li>
+                            </Link>
+                            <Link to="/single_post_no_slidebar">
+                                <li><a href="#single_post_no_slidebar">Single Post - No Slidebar</a></li>
                             </Link>
                         </ul>
                     </nav>

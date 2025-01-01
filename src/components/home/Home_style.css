@@ -130,10 +130,24 @@ body {
 
 .SideMenu_Home li {
     margin: 20px 0;
+    margin-left: 20px;
+}
+
+.SideMenu_Home h1 {
+    margin-left: 20px;
 }
 
 .SideMenu_Home a:nth-child(1) li a{ 
     color: #9caa00;
+}
+
+.SideMenu_Home a:nth-child(6) li a,
+.SideMenu_Home a:nth-child(7) li a,
+.SideMenu_Home a:nth-child(9) li a,
+.SideMenu_Home a:nth-child(10) li a,
+.SideMenu_Home a:nth-child(12) li a,
+.SideMenu_Home a:nth-child(13) li a { 
+    padding-left: 20px;
 }
 
 .SideMenu_Home a {
@@ -696,13 +710,17 @@ body {
 /* Testimonials */
 
 .Testimonials {
-    margin-bottom: 130px;
     margin-top: 200px;
+    padding-bottom: 40px;
+    padding-top: 50px;
 }
 
 .Slider_Text {
     text-align: center;
     margin-bottom: 55px;
+    position: absolute;
+    top: 7450px;
+    right: 700px;
 }
 
 .Slider_Items {
@@ -874,5 +892,15 @@ footer button {
     }
     .Seasoning_Second img {
         width: 400px;
+    }
+}
+
+@media (max-width: 1469px) {
+    .Slider_Text {
+        text-align: center;
+        margin-bottom: 55px;
+        position: absolute;
+        top: 7250px;
+        right: 700px;
     }
 }

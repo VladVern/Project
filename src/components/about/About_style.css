@@ -132,10 +132,24 @@ body {
 
 .SideMenu_About li {
     margin: 20px 0;
+    margin-left: 20px;
+}
+
+.SideMenu_About h1 {
+    margin-left: 20px;
 }
 
 .SideMenu_About a:nth-child(4) li a {
     color: #9caa00;
+}
+
+.SideMenu_About a:nth-child(6) li a,
+.SideMenu_About a:nth-child(7) li a,
+.SideMenu_About a:nth-child(9) li a,
+.SideMenu_About a:nth-child(10) li a,
+.SideMenu_About a:nth-child(12) li a,
+.SideMenu_About a:nth-child(13) li a { 
+    padding-left: 20px;
 }
 
 .SideMenu_About a {

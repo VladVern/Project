@@ -11,11 +11,13 @@ body {
 
 /* Header */
 
-.Header_Contact {
+.Header_Blog_Two {
     height: 690px;
-    background-image: url(./img/HeaderImg.png); 
+    background-image: url(./img/Header.png); 
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 .Navigation {
@@ -102,7 +104,7 @@ body {
 
 /*  */
 
-.SideMenu_Contact {
+.SideMenu_Blog_Two {
     position: fixed;
     top: 0;
     right: -300px;
@@ -118,46 +120,46 @@ body {
     z-index: 500;
 }
 
-.SideMenu_Contact.open {
+.SideMenu_Blog_Two.open {
     right: 0;
 }
 
-.SideMenu_Contact ul {
+.SideMenu_Blog_Two ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.SideMenu_Contact li {
+.SideMenu_Blog_Two li {
     margin: 20px 0;
     margin-left: 20px;
 }
 
-.SideMenu_Contact h1 {
+.SideMenu_Blog_Two h1 {
     margin-left: 20px;
 }
 
-.SideMenu_Contact a:nth-child(3) li a {
+.SideMenu_Blog_Two a:nth-child(9) li a {
     color: #9caa00;
 }
 
-.SideMenu_Contact a:nth-child(6) li a,
-.SideMenu_Contact a:nth-child(7) li a,
-.SideMenu_Contact a:nth-child(9) li a,
-.SideMenu_Contact a:nth-child(10) li a,
-.SideMenu_Contact a:nth-child(12) li a,
-.SideMenu_Contact a:nth-child(13) li a { 
+.SideMenu_Blog_Two a:nth-child(6) li a,
+.SideMenu_Blog_Two a:nth-child(7) li a,
+.SideMenu_Blog_Two a:nth-child(9) li a,
+.SideMenu_Blog_Two a:nth-child(10) li a,
+.SideMenu_Blog_Two a:nth-child(12) li a,
+.SideMenu_Blog_Two a:nth-child(13) li a { 
     padding-left: 20px;
 }
 
-.SideMenu_Contact a {
+.SideMenu_Blog_Two a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
-.SideMenu_Contact a:hover {
+.SideMenu_Blog_Two a:hover {
     color: #9caa00;
 }
 
@@ -182,266 +184,169 @@ body {
     font-family: 'Rufina', serif;
 }
 
-.Headline_Hero {
-    margin-left: 450px;
-    margin-top: 110px;
+.Headline_Hero_Text_Blog_Two {
+    text-align: center;
+    margin-top: 120px;
 }
 
-.Headline_Hero h1{
+.Headline_Hero_Text_Blog_Two h1{
     color: white;
     font-size: 90px;
     font-weight: 520;
     margin-bottom: 20px;
 }
 
-.Headline_Hero p{
+.Headline_Hero_Text_Blog_Two p{
     color: white;
     font-size: 22px;
-}
-
-.OpenTime {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: 300px;
-    text-align: right;
-}
-
-.Open-time {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 400px;
-    margin-left: auto;
-    margin-bottom: 10px;
-}
-
-.Open-time p {
-    color: white;
-    margin: 0;
-}
-
-.Open-time p:first-child {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.Open-time p:last-child {
-    font-size: 18px;
-}
-
-.OpenTime p {
-    color: white;
-    margin: 5px 0;
-    font-size: 16px;
-}
-
-.Time-eat {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 420px;
-    margin-left: auto;
-    border-top: 1px dotted white;
-    padding-top: 10px;
-}
-
-.Time-eat div {
-    text-align: center;
-    color: white;
-}
-
-.Time-eat p:first-child {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.Time-eat p:last-child {
-    font-size: 16px;
-}
-
-.Brunch {
-    color: white;
-}
-
-.Lunch {
-    color: white;
-}
-
-.Dinner {
-    color: white;
 }
 
 /* Header */
 
-/* Adress+Location */
+/* Text Blog Two Columns */
 
-.Adress_Location {
-    position: relative;
-    margin-top: 150px;
-}
-
-.Orange {
-    position: absolute;
-    top: -120px; 
-    left: 52%;
-    transform: translateX(-50%);
-    z-index: -1;
-    width: 400px;
-    height: auto;
-}
-
-.Contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Text_Contact {
-    margin-top: 160px;
-    margin-left: 200px;
-}
-
-.Text_Contact p {
-   color: #233000;
-   font-size: 25px;
-   font-weight: 550;
-}
-
-.Text_Contact span {
-    color: #9caa00;
-}
-
-.Contact img {
-    width: 530px;
-    height: 430px;
-}
-
-.Place {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 120px;
-}
-
-.Text_Place {
-    margin-top: 160px;
-    margin-right: 120px; 
-}
-
-.Text_Place p {
-    color: #233000;
-    font-size: 25px;
-    font-weight: 550;
-}
-
-.Btn_maps {
-    color: black;
-    font-weight: 950px;
-    background-color: transparent;
-    border: 1px solid black;
-    padding: 15px 25px;
-    cursor: pointer;
+.Text_Blog_Two_Columns {
     font-size: 22px;
-    font-family: 'Rufina', serif;
-    margin-top: 15px;
+    padding-left: 10%;
+    margin-top: 100px;
 }
 
-.Place img {
-    width: 550px;
-    height: 680px;
+.Text_Blog_Two_Columns p {
+    color: #b0b0b0;
 }
 
-/* Reservation Form */
-
-.Reservation_Form {
-    background-color: #ebf0e4;
-    margin-top: 160px;
-    padding: 40px;
-    display: grid;
-    gap: 20px;
-    justify-items: center;
-    text-align: center;
-    border-radius: 10px;
-    padding-bottom: 200px;
-}
-
-.Mint {
-    position: absolute;
-    transform: translateX(-50%);
-    z-index: 0;
-    width: 400px;
-    height: auto;
-    left: 550px;
-}
-
-.Text_Form {
-    display: grid;
-    gap: 10px;
-    justify-items: center;
-    margin-bottom: 20px;
-}
-
-.Text_Form h1 {
-    font-size: 70px;
-}
-
-.Text_Form p {
-    font-size: 20px;
-    color: gray;
-    position: absolute;
-    margin-top: 120px;
-    margin-right: 350px;
-}
-
-.Form_Contact {
-    display: grid;
-    gap: 20px;
-    max-width: 500px;
-    margin: 0 auto;
-    z-index: 1;
-}
-
-.Form_Contact select, .Form_Contact input {
-    width: 100%;
-    padding: 12px;
+.Text_Blog_Two_Columns span {
     color: black;
-    background-color: transparent;
-    border: 1px solid black;
-    font-size: 18px;
-    font-family: 'Rufina', serif;
-    box-sizing: border-box;
 }
 
-.Time, .Name {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+/* Recent Post Blog Two Columns */
+
+.Recent_Post_Blog_Two_Columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 150px;
+    position: relative;
+    z-index: 0;
 }
 
-.Time select, .Time input, .Name input {
-    width: 200px;
+.Foto_Blog_Two_Columns {
+    position: relative;
+    width: 600px;
+    height: auto;
 }
 
-.Guests select, .Tel input, .Email input{
+.Foto_Blog_Two_Columns img {
     width: 100%;
+    height: auto;
+    z-index: 0;
 }
 
-.Submit_Btn {
-    width: 100%;
+.Foto_Blog_Two_Columns button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    width: 150px;
     color: white;
     background-color: #5e6600;
-    border: 1px solid black;
+    border: 0px solid black;
     padding: 15px;
     font-size: 20px;
     font-family: 'Rufina', serif;
     cursor: pointer;
+    text-align: center;
 }
 
-.error-message p {
-    color: red;
-    font-size: 14px;
-    margin-top: 10px;
-    text-align: left;
+.Review_Two_Columns {
+    margin-left: 15px;
+}
+
+.User_Two_Columns {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 30px;
+}
+
+.User_Two_Columns img {
+    width: 60px;
+    height: auto;
+}
+
+.User_Two_Columns a {
+    text-decoration: none;
+    color: #5e6600;
+    font-weight: 600;
+}
+
+.Text_Review_Two_Columns h1 {
+    font-size: 50px;
+}
+
+.Text_Review_Two_Columns p {
+    font-size: 20px;
+    color: #4d4d4d;
+}
+
+.Text_Review_Two_Columns hr {
+    border: none;
+    border-top: 3px dotted black;
+}
+
+.Text_Review_Two_Columns a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.Text_Review_Two_Columns img {
+    width: 32px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.Recent_Post_Blog_Two_Columns_Last {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 150px;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 100px;
+}
+
+.Recent_Post_Blog_Two_Columns_First {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    position: relative;
+    z-index: 0;
+}
+
+/* Pagination */
+
+.Pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pagination_Items {
+    margin-bottom: 115px;
+}
+
+.Pagination_Items button {
+    color: black;
+    font-weight: 950px;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 6px 11px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'Rufina', serif;
+    margin: 0 15px;  
 }
 
 /* Footer */
@@ -527,14 +432,5 @@ footer button {
 @media (max-width: 1288px) {
     .Subscribe {
         display: none;
-    }
-    .Text_Place {
-        margin-left: 100px;
-    }
-    .Headline_Hero {
-        display: none;
-    }
-    .OpenTime {
-        margin-top: 230px;
     }
 }

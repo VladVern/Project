@@ -6,6 +6,7 @@ import Home from "./components/home/Home"
 import Blog_Two_Columns from "./components/blogs/blogs_two_columns/Blog_Two_Columns"
 import Blog_One_Columns from "./components/blogs/blog_one_column/Blog_One_Column"
 import Single_Portfolio_No_Slidebar from "./components/portfolio/single_portfolio_no_sidebar/Single_Portfolio_No_Slidebar"
+import Portfolio_Grids from "./components/portfolio/portfolio_grids/Portfolio_Grids"
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/blogs_two_columns" element={<Blog_Two_Columns />} />
             <Route path="/blogs_one_columns" element={<Blog_One_Columns />} />
             <Route path="/single_portfolio_no_slidebar" element={<Single_Portfolio_No_Slidebar />} />
+            <Route path="/portfolio_grids" element={<Portfolio_Grids />} />
         </Routes>
         </Router>
       )

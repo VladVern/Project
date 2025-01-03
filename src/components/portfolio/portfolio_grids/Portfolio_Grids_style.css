@@ -11,9 +11,9 @@ body {
 
 /* Header */
 
-.Header_Single_Portfolio_No_Slidebar {
+.Header_Partfolio_Grids {
     height: 690px;
-    background-image: url(../../../assets/portfolio/single_portfolio_no_slidebar/HeaderImg.png); 
+    background-image: url(../../../assets/portfolio/portfolio_grids/HeaderImg.png); 
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -104,7 +104,7 @@ body {
 
 /*  */
 
-.SideMenu_Single_Portfolio_No_Slidebar {
+.SideMenu_Partfolio_Grids {
     position: fixed;
     top: 0;
     right: -300px;
@@ -120,46 +120,46 @@ body {
     z-index: 500;
 }
 
-.SideMenu_Single_Portfolio_No_Slidebar.open {
+.SideMenu_Partfolio_Grids.open {
     right: 0;
 }
 
-.SideMenu_Single_Portfolio_No_Slidebar ul {
+.SideMenu_Partfolio_Grids ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.SideMenu_Single_Portfolio_No_Slidebar li {
+.SideMenu_Partfolio_Grids li {
     margin: 20px 0;
     margin-left: 20px;
 }
 
-.SideMenu_Single_Portfolio_No_Slidebar h1 {
+.SideMenu_Partfolio_Grids h1 {
     margin-left: 20px;
 }
 
-.SideMenu_Single_Portfolio_No_Slidebar a:nth-child(7) li a {
+.SideMenu_Partfolio_Grids a:nth-child(6) li a {
     color: #9caa00;
 }
 
-.SideMenu_Single_Portfolio_No_Slidebar a:nth-child(6) li a,
-.SideMenu_Single_Portfolio_No_Slidebar a:nth-child(7) li a,
-.SideMenu_Single_Portfolio_No_Slidebar a:nth-child(9) li a,
-.SideMenu_Single_Portfolio_No_Slidebar a:nth-child(10) li a,
-.SideMenu_Single_Portfolio_No_Slidebar a:nth-child(12) li a,
-.SideMenu_Single_Portfolio_No_Slidebar a:nth-child(13) li a { 
+.SideMenu_Partfolio_Grids a:nth-child(6) li a,
+.SideMenu_Partfolio_Grids a:nth-child(7) li a,
+.SideMenu_Partfolio_Grids a:nth-child(9) li a,
+.SideMenu_Partfolio_Grids a:nth-child(10) li a,
+.SideMenu_Partfolio_Grids a:nth-child(12) li a,
+.SideMenu_Partfolio_Grids a:nth-child(13) li a { 
     padding-left: 20px;
 }
 
-.SideMenu_Single_Portfolio_No_Slidebar a {
+.SideMenu_Partfolio_Grids a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
-.SideMenu_Single_Portfolio_No_Slidebar a:hover {
+.SideMenu_Partfolio_Grids a:hover {
     color: #9caa00;
 }
 
@@ -184,26 +184,25 @@ body {
     font-family: 'Rufina', serif;
 }
 
-.Headline_Hero_Text_Single_Portfolio_No_Slidebar {
+.Headline_Hero_Text_Partfolio_Grids {
     text-align: center;
-    padding-top: 20px;
 }
 
-.Headline_Hero_Text_Single_Portfolio_No_Slidebar h1{
+.Headline_Hero_Text_Partfolio_Grids h1{
     color: white;
     font-size: 90px;
     font-weight: 520;
-    margin-bottom: 20px;
+    padding-top: 70px;
 }
 
-.Scroll_Single_Portfolio_No_Slidebar {
+.Scroll_Partfolio_Grids {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.Scroll_Single_Portfolio_No_Slidebar h5 {
+.Scroll_Partfolio_Grids h5 {
     writing-mode: vertical-rl;
     transform: rotate(360deg);
     font-size: 30px;
@@ -211,10 +210,10 @@ body {
     margin: 0;
     font-size: 20px;
     font-weight: 500px;
-    padding-top: 24px;
+    padding-top: 40px;
 }
 
-.Scroll_Single_Portfolio_No_Slidebar .dashed-line {
+.Scroll_Partfolio_Grids .dashed-line {
     width: 2px;
     height: 126px;
     border: none;
@@ -223,129 +222,136 @@ body {
 
 /* Header */
 
-/* Drinks Food */
+/* Filters Portfolio Grids */
 
-.Drinks_Food {
-    margin-top: 145px;
-}
-
-.Drinks_Single_Portfolio_No_Slidebar {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.Drinks_Single_Portfolio_No_Slidebar img {
-    position: relative;
-    z-index: 1;
-}
-
-.Text_Drinks_Single_Portfolio_No_Slidebar h1 {
-    font-size: 45px;
-}
-
-.Text_Drinks_Single_Portfolio_No_Slidebar p {
-    color: #4d4d4d;
-    font-size: 20px;
-}
-
-.Food_First_Single_Portfolio_No_Slidebar {
-    position: relative;
+.Filters_Portfolio_Grids {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    padding-top: 80px;
+    padding-bottom: 25px;
 }
 
-.Food_First_Single_Portfolio_No_Slidebar img {
-    position: absolute;
-    z-index: 0;
-    left: 25%;
-    width: 600px;
-    height: auto;
+.Filters_Portfolio_Grids a {
+    font-size: 23px;
+    text-decoration: none;
+    color: black;   
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
 }
 
-.Food_Text_Single_Portfolio_No_Slidebart {
+.Filters_Portfolio_Grids a:nth-child(3) {
+    text-decoration: none;
+    border-bottom: 2px dotted black;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Portfolio Grids Items */
+
+.Portfolio_Grids_Items {
+    gap: 20px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Feature_Portfolio_Grids {
     position: relative;
-    z-index: 1;
-    padding-left: 580px;
-    text-align: left;
-}
-
-.Food_Text_Single_Portfolio_No_Slidebart h1 {
-    font-size: 45px;
-}
-
-.Food_Text_Single_Portfolio_No_Slidebart p {
-    color: #4d4d4d;
-    font-size: 20px;
-}
-
-.Drinks_Food_Text {
-    text-align: center;
-    margin-top: 320px;
-}
-
-.Drinks_Food_Text p {
-    color: #4d4d4d;
-    font-size: 20px;
-}
-
-.Drinks_Food_Text h1 {
-    font-size: 45px;
-    padding-top: 20px;
-}
-
-.Food_Second_Single_Portfolio_No_Slidebar {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 160px;
-    padding-top: 30px;
-}
-
-.Food_Second_Single_Portfolio_No_Slidebar img {
-    width: 1100px;
-    height: auto;
-}
-
-/* Portfolio PreviosNext */
-
-.Portfolio_PreviosNext {
-    background-color: #EBF0E4;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.Previos_Page_Items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Previos_Page_Items p {
-    font-size: 20px;
-}
-
-.Previos_Page_Items img {
+    overflow: hidden;
+    margin-left: 20px;
     margin-right: 20px;
 }
 
-.Next_Page_Items {
+.Feature_Portfolio_Grids img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Feature_Portfolio_Grids_Text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    padding-top: 30px;
+}
+
+.Feature_Portfolio_Grids_Text h1 {
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+
+.Partfolio_Cata {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.Partfolio_Cata p {
+    margin: 0;
+    font-size: 18px;
+    padding-bottom: 25px;
+    padding-top: 8px;
+}
+
+.Partfolio_Cata img {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.First_Portfolio_Grids_Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.Second_Portfolio_Grids_Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.Third_Portfolio_Grids_Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+/* Pagination */
+
+.Pagination {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.Next_Page_Items p {
-    font-size: 20px;
+.Pagination_Items {
+    margin-bottom: 115px;
 }
 
-.Next_Page_Items img {
-    margin-left: 20px;
+.Pagination_Items button {
+    color: black;
+    font-weight: 950px;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 6px 11px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'Rufina', serif; 
 }
 
 /* Footer */

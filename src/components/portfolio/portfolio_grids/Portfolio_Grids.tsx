@@ -1,16 +1,17 @@
-import "./Single_Portfolio_No_Slidebar_style.css"
+import "./Portfolio_Grids_style.css"
 import { useState } from "react"
 import { Link } from "react-router-dom";
-import Logo from "../../../assets/portfolio/single_portfolio_no_slidebar/Logo.png"
-import Social_Media from "../../../assets/portfolio/single_portfolio_no_slidebar/Social_Media.png"
-import Drinks from "../../../assets/portfolio/single_portfolio_no_slidebar/Drinks.png"
-import Food_First from "../../../assets/portfolio/single_portfolio_no_slidebar/Food_First.png"
-import Food_Second from "../../../assets/portfolio/single_portfolio_no_slidebar/Food_Second.png"
-import Icon_Back from "../../../assets/portfolio/single_portfolio_no_slidebar/Icon_back.png"
-import Icon_Arrow_Left from "../../../assets/portfolio/single_portfolio_no_slidebar/Icon_arrow-left.png"
-import Icon_Arrow_Right from "../../../assets/portfolio/single_portfolio_no_slidebar/Icon_arrow-right.png"
+import Logo from "../../../assets/portfolio/portfolio_grids/Logo.png"
+import Social_Media from "../../../assets/portfolio/portfolio_grids/Social_Media.png"
+import Feature_Image_First from "../../../assets/portfolio/portfolio_grids/Feature_Image_First.png"
+import Feature_Image_Second from "../../../assets/portfolio/portfolio_grids/Feature_Image_Second.png"
+import Feature_Image_Third from "../../../assets/portfolio/portfolio_grids/Feature_Image_Third.png"
+import Feature_Image_Fourth from "../../../assets/portfolio/portfolio_grids/Feature_Image_Fourth.png"
+import Feature_Image_Fifth from "../../../assets/portfolio/portfolio_grids/Feature_Image_Fifth.png"
+import Feature_Image_Sixth from "../../../assets/portfolio/portfolio_grids/Feature_Image_Sixth.png"
+import Icon_Arrow_Right from "../../../assets/portfolio/portfolio_grids/Icon_arrow-right.png"
 
-function Single_Portfolio_No_Slidebar() {
+function Portfolio_Grids() {
     // Menu
     const [menuOpen, setMenuOpen] = useState(false)
 
@@ -20,7 +21,7 @@ function Single_Portfolio_No_Slidebar() {
 
     return (
         <div className="wrapper">
-            <header className="Header_Single_Portfolio_No_Slidebar">
+            <header className="Header_Partfolio_Grids">
                 <div className="Navigation">
                     <div className="First">
                     <Link to="/home"><img src={Logo} alt="Logo" className="Logo"/></Link>
@@ -36,7 +37,7 @@ function Single_Portfolio_No_Slidebar() {
                         <p className="Number">+86 852 346 000</p>
                         <button className="Reservations">Reservations</button>
                     </div>
-                    <nav className={`SideMenu_Single_Portfolio_No_Slidebar ${menuOpen ? "open" : ""}`}>
+                    <nav className={`SideMenu_Partfolio_Grids ${menuOpen ? "open" : ""}`}>
                         <ul>
                         <Link to="/home">
                                 <li><a href="#home">Home</a></li>
@@ -74,54 +75,89 @@ function Single_Portfolio_No_Slidebar() {
                         </ul>
                     </nav>
                 </div>
-                <div className="Headline_Hero_Text_Single_Portfolio_No_Slidebar">
-                    <h1>Deep Sea Snow White <br /> Cod Fillet</h1>
+                <div className="Headline_Hero_Text_Partfolio_Grids">
+                    <h1>Portfolio - Grids</h1>
                 </div>
-                <div className="Scroll_Single_Portfolio_No_Slidebar">
+                <div className="Scroll_Partfolio_Grids">
                     <h5>Scroll</h5>
                     <hr className="dashed-line" />
                 </div>
             </header>
-            <div className="Drinks_Food">
-                <div className="Drinks_Single_Portfolio_No_Slidebar">
-                    <img src={Drinks} alt="Drinks" />
-                    <div className="Text_Drinks_Single_Portfolio_No_Slidebar">
-                        <h1>Melt in Your Mouth</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur <br /> adipisicing elit.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Et in sed in pellentesque ornare <br /> nunc nisl. Augue habitant accumsan, ut <br /> parturient orci ac etiam congue mi. </p>
-                    </div>
-                </div>
-                <div className="Food_First_Single_Portfolio_No_Slidebar">
-                    <img src={Food_First} alt="Food" />
-                    <div className="Food_Text_Single_Portfolio_No_Slidebart">
-                        <h1>The Best Taste</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit.</p>
-                    </div>
-                </div>
-                <div className="Drinks_Food_Text">
-                    <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Et in sed in pellentesque ornare <br /> nunc nisl. Augue habitant accumsan, ut <br /> parturient orci ac etiam congue mi. </p>
-                    <h1>Cooking Suggestions</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit.</p>
-                </div>
-                <div className="Food_Second_Single_Portfolio_No_Slidebar">
-                    <img src={Food_Second} alt="Food" />
-                </div>
+            <div className="Filters_Portfolio_Grids">
+                <a href="#">All</a>
+                <a href="#">Starter</a>
+                <a href="#">Launch</a>
+                <a href="#">Dinner</a>
+                <a href="#">Drinks</a>
+                <a href="#">Sweets</a>
+                <a href="#">Fruits</a>
             </div>
-            <div className="Portfolio_PreviosNext">
-                <div className="Previos_Page">
-                    <div className="Previos_Page_Items">
-                        <a href="#"><img src={Icon_Arrow_Left} alt="Icon Arrow Left" /></a>
-                        <p>PREVIOUS PAGE</p>
+            <div className="Portfolio_Grids_Items">
+                <div className="First_Portfolio_Grids_Items">
+                    <div className="Feature_Portfolio_Grids">
+                        <img src={Feature_Image_First} alt="Feature" />
+                        <div className="Feature_Portfolio_Grids_Text">
+                            <h1>Premium Deep Sea Snow<br /> White Cod Fillet</h1>
+                            <div className="Partfolio_Cata">
+                                <p>Launch  •  Dinner</p>
+                                <img src={Icon_Arrow_Right} alt="Icon Arrow Right" />
+                            </div>
+                        </div>
                     </div>
-                    <h1>Strip Steak With Rosemary Butter</h1>
+                    <div className="Feature_Portfolio_Grids">
+                        <img src={Feature_Image_Second} alt="Feature" />
+                        <div className="Feature_Portfolio_Grids_Text">
+                            <h1>Option of natural <br /> wine available</h1>
+                            <div className="Partfolio_Cata">
+                                <p>Drinks  •  Fruits</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a href="#"><img src={Icon_Back} alt="Icon Back" /></a>
-                <div className="Next_Page">
-                    <div className="Next_Page_Items">
-                        <p>NEXT PAGE</p>
-                        <a href="#"><img src={Icon_Arrow_Right} alt="Icon Arrow Right" /></a>
+                <div className="Second_Portfolio_Grids_Items">
+                    <div className="Feature_Portfolio_Grids">
+                        <img src={Feature_Image_Third} alt="Feature" />
+                        <div className="Feature_Portfolio_Grids_Text">
+                            <h1>Best pumpkin for<br /> pumpkin soup</h1>
+                            <div className="Partfolio_Cata">
+                                <p>Launch  •  Starters</p>
+                            </div>
+                        </div>
                     </div>
-                    <h1>Option of natural wine available</h1>
+                    <div className="Feature_Portfolio_Grids">
+                        <img src={Feature_Image_Fourth}alt="Feature" />
+                        <div className="Feature_Portfolio_Grids_Text">
+                            <h1>Strip Steak With Rosemary<br /> Butter</h1>
+                            <div className="Partfolio_Cata">
+                                <p>Diner  •  Launch</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div className="Third_Portfolio_Grids_Items">
+                    <div className="Feature_Portfolio_Grids">
+                        <img src={Feature_Image_Fifth} alt="Feature" /> 
+                        <div className="Feature_Portfolio_Grids_Text">
+                            <h1>Braised Sliced Abalone,Fish<br /> Maw with Premium Seafood</h1>
+                            <div className="Partfolio_Cata">
+                                <p>Cold Dishes  •  Starters</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="Feature_Portfolio_Grids">
+                        <img src={Feature_Image_Sixth} alt="Feature" />
+                        <div className="Feature_Portfolio_Grids_Text">
+                            <h1>Pan Fried Live Prawn with<br /> Superior Soy Sauce</h1>
+                            <div className="Partfolio_Cata">
+                                <p>Starter  •  Dinner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div className="Pagination">
+                <div className="Pagination_Items">
+                    <button>Loading...</button>
                 </div>
             </div>
             <footer className="footer">
@@ -164,4 +200,4 @@ function Single_Portfolio_No_Slidebar() {
     )
 }
 
-export default Single_Portfolio_No_Slidebar
+export default Portfolio_Grids

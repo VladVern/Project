@@ -179,7 +179,7 @@ function Blog_Two_Columns() {
                             <h1>Three Ideas for Cooking <br /> Goat Meat at Home</h1>
                             <hr />
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="#">Read More <img src="src/components/blogs/blogs_two_columns/img/Vector.png" alt="Vector" /></a>
+                            <a href="#">Read More <img src={Vector} alt="Vector" /></a>
                         </div>
                     </div>
                 </div>
@@ -197,7 +197,7 @@ function Blog_Two_Columns() {
                             <h1>12 Sparkling Wines We're <br /> Loving This Summer</h1>
                             <hr />
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="#">Read More <img src="src/components/blogs/blogs_two_columns/img/Vector.png" alt="Vector" /></a>
+                            <a href="#">Read More <img src={Vector} alt="Vector" /></a>
                         </div>
                     </div>
                 </div>

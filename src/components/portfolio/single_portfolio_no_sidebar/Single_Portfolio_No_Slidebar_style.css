@@ -226,7 +226,7 @@ body {
 /* Drinks Food */
 
 .Drinks_Food {
-    margin-top: 145px;
+    margin-top: 115px;
 }
 
 .Drinks_Single_Portfolio_No_Slidebar {
@@ -238,6 +238,10 @@ body {
 .Drinks_Single_Portfolio_No_Slidebar img {
     position: relative;
     z-index: 1;
+}
+
+.Text_Drinks_Single_Portfolio_No_Slidebar { 
+    padding-bottom: 420px;
 }
 
 .Text_Drinks_Single_Portfolio_No_Slidebar h1 {
@@ -253,16 +257,17 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 300px;
 }
 
-.Food_First_Single_Portfolio_No_Slidebar img {
+.Food_Forst_Single_Portfolio img {
     position: absolute;
     z-index: 0;
     left: 25%;
     width: 600px;
     height: auto;
+    bottom: -100px;
 }
 
 .Food_Text_Single_Portfolio_No_Slidebart {
@@ -270,6 +275,7 @@ body {
     z-index: 1;
     padding-left: 580px;
     text-align: left;
+    padding-top: 100px;
 }
 
 .Food_Text_Single_Portfolio_No_Slidebart h1 {
@@ -283,7 +289,7 @@ body {
 
 .Drinks_Food_Text {
     text-align: center;
-    margin-top: 320px;
+    margin-top: 250px;
 }
 
 .Drinks_Food_Text p {

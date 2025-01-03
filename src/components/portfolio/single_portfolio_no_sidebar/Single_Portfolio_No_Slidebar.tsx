@@ -92,7 +92,9 @@ function Single_Portfolio_No_Slidebar() {
                     </div>
                 </div>
                 <div className="Food_First_Single_Portfolio_No_Slidebar">
-                    <img src={Food_First} alt="Food" />
+                    <div className="Food_Forst_Single_Portfolio">
+                        <img src={Food_First} alt="Food" />
+                    </div>
                     <div className="Food_Text_Single_Portfolio_No_Slidebart">
                         <h1>The Best Taste</h1>
                         <p>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit.</p>

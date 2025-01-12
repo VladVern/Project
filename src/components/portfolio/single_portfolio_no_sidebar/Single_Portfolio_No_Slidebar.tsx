@@ -65,8 +65,8 @@ function Single_Portfolio_No_Slidebar() {
                                 <li><a href="#blogs_one_columns">Blogs - One Columns</a></li>    
                             </Link>
                             <h1>Post</h1>
-                            <Link to="/single_post_whith_slidebar">
-                                <li><a href="#single_post_whith_slidebar">Single Post - whith Slidebar</a></li>
+                            <Link to="/single_post_with_slidebar">
+                                <li><a href="#single_post_with_slidebar">Single Post - with Slidebar</a></li>
                             </Link>
                             <Link to="/single_post_no_slidebar">
                                 <li><a href="#single_post_no_slidebar">Single Post - No Slidebar</a></li>

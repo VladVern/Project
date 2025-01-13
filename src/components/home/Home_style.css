@@ -105,17 +105,59 @@ body {
 .SideMenu_Home {
     position: fixed;
     top: 0;
-    right: -300px;
-    width: 280px;
+    right: -100%;
+    width: 100%;
     height: 100%;
-    background-color: #4d4d4d;
+    background: linear-gradient(rgba(35, 48, 0, 0.8), rgba(35, 48, 0, 0.7)), url(../../assets/menu_open/Menu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     transition: right 0.3s ease-in-out;
     z-index: 500;
+}
+
+.SideMenu_Home a:nth-child(1) li a, 
+.SideMenu_Home a:nth-child(2) li a,
+.SideMenu_Home a:nth-child(3) li a,
+.SideMenu_Home a:nth-child(4) li a{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.Contact_Open_Menu {
+    padding-top: 16%;
+}
+
+.Contact_Open_Menu h6{
+    font-size: 30px;
+    margin: 0;
+}
+
+.Contact_Open_Menu hr {
+    border: none;
+    border-top: 2px dashed white;
+}
+
+.Contact_Open_Menu_First {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Contact_Open_Menu_First p {
+    font-size: 20px;
+}
+
+.Contact_Open_Menu_Second p {
+    font-size: 20px;
+}
+
+.Contact_Open_Menu img {
+    width: 200px;
+    height: auto;
+    padding-top: 20px;
 }
 
 .SideMenu_Home.open {
@@ -135,6 +177,7 @@ body {
 
 .SideMenu_Home h1 {
     margin-left: 20px;
+    padding-top: 12px;
 }
 
 .SideMenu_Home a:nth-child(1) li a{ 
@@ -219,8 +262,7 @@ body {
     border-top: 2px dashed white;
     margin-right: 350px;
     transform: rotate(90deg);
-    transform-origin: left top;
-    
+    transform-origin: left top; 
 }
 
 .Food_First {

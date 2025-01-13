@@ -1,5 +1,6 @@
 import "./Single_Post_With_Slidebar_style.css"
 import { useState } from "react"
+import { useEffect } from "react"
 import { Link } from "react-router-dom"
 import Logo from '../../../assets/posts/single_post_with_slidebar/Logo.png'
 import Avatar_Header from '../../../assets/posts/single_post_with_slidebar/Avatar_Header.png'
@@ -27,7 +28,25 @@ function Single_Post_With_Slidebar() {
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
+        if (!menuOpen) {
+            const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth
+            document.body.style.overflow = 'hidden'
+            document.body.style.paddingRight = `${scrollBarWidth}px`
+        } else {
+            document.body.style.overflow = 'auto'
+            document.body.style.paddingRight = '0px'
+        }
     }
+
+    useEffect(() => {
+        document.body.style.overflow = 'auto'
+        document.body.style.paddingRight = '0px'
+
+        return () => {
+            document.body.style.overflow = 'auto'
+            document.body.style.paddingRight = '0px'
+        }
+    }, [])
 
     return (
         <div className="wrapper">
@@ -50,32 +69,32 @@ function Single_Post_With_Slidebar() {
                     <nav className={`SideMenu_Post_With_Slidebar ${menuOpen ? "open" : ""}`}>
                         <ul>
                             <Link to="/home">
-                                <li><a href="#home">Home</a></li>
+                                <li><a href="#home">• Home</a></li>
                             </Link>
                             <Link to="/menu">
-                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#menu">• Menu</a></li>
                             </Link>
                             <Link to="/contact">
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#contact">• Contact</a></li>
                             </Link>
                             <Link to="/about">
-                                <li><a href="#about">About</a></li>
+                                <li><a href="#about">• About</a></li>
                             </Link>
-                            <h1>Portfolio</h1>
+                            <h1>• Portfolio</h1>
                             <Link to="/portfolio_grids">
                                 <li><a href="#portfolio">Portfolio - Grids</a></li>
                             </Link>
                             <Link to="/single_portfolio_no_slidebar">
                                 <li><a href="#portfolio">Single Portfolio - No Sidebar</a></li>
                             </Link>
-                            <h1>Blogs</h1>
+                            <h1>• Blogs</h1>
                             <Link to="/blogs_two_columns">
-                                <li><a href="#blogs_two_columns">Blogs - Two Columns</a></li>
+                                <li><a href="#blogs_two_columns">Blogs - Two Columns</a></li>    
                             </Link>
                             <Link to="/blogs_one_columns">
-                                <li><a href="#blogs_one_columns">Blogs - One Columns</a></li>
+                                <li><a href="#blogs_one_columns">Blogs - One Columns</a></li>    
                             </Link>
-                            <h1>Post</h1>
+                            <h1>• Post</h1>
                             <Link to="/single_post_with_slidebar">
                                 <li><a href="#single_post_with_slidebar">Single Post - with Slidebar</a></li>
                             </Link>
@@ -83,6 +102,19 @@ function Single_Post_With_Slidebar() {
                                 <li><a href="#single_post_no_slidebar">Single Post - No Slidebar</a></li>
                             </Link>
                         </ul>
+                        <div className="Contact_Open_Menu">
+                            <h6>Contact</h6>
+                            <hr />
+                            <div className="Contact_Open_Menu_First">
+                                <p>+86 852 346 000</p>
+                                <p>info@foodzero.com</p>
+                            </div>
+                            <div className="Contact_Open_Menu_Second">
+                                <p>1959 Sepulveda Blvd.</p>
+                                <p>Culver City, CA, 90230</p>
+                            </div>
+                            <img src={Social_Media} alt="Social Media" />
+                        </div>
                     </nav>
                 </div>
                 <div className="Headline_Hero_Text_Post_With_Slidebar_Items">
